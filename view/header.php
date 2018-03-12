@@ -31,7 +31,7 @@
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		        <div class="navbar-header">
 				  <a class="navbar-brand" href="<?php echo $base_path; ?>">
-				    <img src="<?php echo $base_path . '/images/marka-logo.png'; ?>" width="80" height="80" alt="">
+				    <img src="<?php echo $base_path . '/images/marka-logo.png'; ?>" width="80" height="80" alt="Marak_logo">
 				  </a>
 			    </div>
 
@@ -51,7 +51,7 @@
 
 		      <ul class="nav navbar-nav" style="margin-left: 25%;">
 				<li><a href="<?php echo $base_path . '/beaches' ?>">Beaches</a></li>
-		        <li><a href="<?php echo $base_path . '/tags'; ?>">Tags</a></li>
+ 
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plan Your Trip<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
@@ -68,10 +68,13 @@
 		      <ul class="nav navbar-nav navbar-right" style="margin-top: 8px; padding-right: 25px; padding-left: 25px">
                 <li>
                 	<a style="padding-top: 0px;" href="<?php echo $base_path . '/user/index.php' ?>">
-                	<button type="button" class="btn btn-link" style="color: #EDF5E1;">Login</button>
+                		<button type="button" class="btn btn-link" style="color: #EDF5E1;">Login</button></a>
                		</a>
            		</li>
-		        <li style="margin-left: 10px;"><button type="button" class="btn btn-success">Sign Up</button></li>
+		        <li style="margin-left: 10px;">
+				<a style="padding-top: 0px;" href="<?php echo $base_path . '/user/user_signup.php'; ?>">
+		        	<button type="button" class="btn btn-success">Sign Up</button></li>
+				</a>
 		      </ul><br>
 
 

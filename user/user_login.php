@@ -37,12 +37,12 @@
 
 	<div id="header">
         
-        <h2>Please log in<h2>
+        <h2>Please log in</h2>
 	<hr>
 	</div>
 	
 	<div id="content">
-            <form name="loggedin" id="loggedin"  action="   "> <!-- Form needs an action after login -->
+            <form name="loggedin" id="loggedin"  action=""> <!-- Form needs an action after login -->
 		
 		<label for="idusername">Username:</label>
 		<input type="text" name="yourusername" id="idusername" size="30" maxlength="100">
@@ -53,12 +53,14 @@
 		<br>
 		<br>
 
-		<input type="submit" name="submitbutton" id="submitbutton" value="Login">
+
 		<br>
-		<br>
-		<div id="box">
-		</div>
+
 	</form>
+
+	<a href="<?php echo $base_path . '/user/user_menu.php'; ?>"><button type="button" class="btn btn-default">Submit</button></a>
+	
+	<a href="<?php echo $base_path . '/user/user_signup.php'; ?>"><button type="button" class="btn btn-success">Sign Up</button></a>
 	
 	</div>
 </div>
@@ -71,5 +73,3 @@
 	
 	
          
-
-<?php include '../view/footer.php';?>

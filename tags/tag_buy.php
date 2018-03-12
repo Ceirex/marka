@@ -10,26 +10,27 @@
 	<div style="padding:40px;">
 		
 	
-	<formaction="#" method="post">
+	<form action="#" method="post">
 
 		<div>
 			<h3>Personal Info</h3><hr>
 
-			<label for="f_name">First Name: </label><input style="margin-left: 10px;" type="text" name="f_name" id="f_name" value="" tabindex="1"/><br>
-			<label for="l_name">Last Name: </label><input style="margin-left: 10px;" type="text" name="l_name" id="l_name" value="" tabindex="2"/>
+			<label for="f_name" >First Name: </label><input class="input_box" width="30%;" style="margin-left: 10px;" type="text" name="f_name" id="f_name" value="" tabindex="1"/>
+			<label for="l_name" style="margin-left: 50px; ">Last Name: </label><input class="input_box" width="30%" style="margin-left: 10px;" type="text" name="l_name" id="l_name" value="" tabindex="2"/>
 			
 			<br><br><br><h3>Address</h3><hr>
-			<label for="street" class="label_t">Street: </label><input type="text" name="street" id="street" value="" tabindex="3"/><br>
-			<label for="city" class="label_t">City: </label><input type="text" name="city" id="city" value="" tabindex="4"/><br>
-			<label for="state" class="label_t">State: </label>
-				<select name="select-choice" id="select-choice" tabindex="5" id="state">
-					<option value="Choice 1">PA</option>
-					<option value="Choice 2">NJ</option>
-					<option value="Choice 3">DE</option>
-					<option value="Choice 3">Other</option>
+			<label for="street" class="label_t">Street: </label><input class="input_box" type="text" name="street" id="street" value="" tabindex="3"/><br><br>
+			<label for="city" class="label_t">City: </label><input class="input_box" type="text" name="city" id="city" value="" tabindex="4"/><br><br>
+			<label for="beaches" class="label_t">Beaches: </label>
+				<select name="select-choice" tabindex="5" id="beaches">
+					<option value="Choice 1">Ocean City NJ</option>
+					<option value="Choice 2">Cape May</option>
+					<option value="Choice 3">Wildwood</option>
+					<option value="Choice 3">Avalon</option>
 				</select>
-				<br>
-			<label for="zip" class="label_t">Zip: </label><input type="text" name="zip" id="zip" value="" tabindex="6"/>
+			<br><br>
+
+			<label for="zip" class="label_t">Zip: </label><input class="input_box" type="text" name="zip" id="zip" value="" tabindex="6"/>
 
 			<br><br><hr>
 			<label for="qty_t" class="label_t">Qty Tags: </label><input type="text" name="qty_t" id="qty_t" value="" tabindex="7"/>

@@ -4,7 +4,7 @@
 <div class="part3">
 	<div class="row">
 		<div class="container">		
-				<a href="<?php echo $base_path . '/beaches' ?>"><div class="buttons col-lg-4 col-md-6 col-sm-10"><button type="button" class="btn btn-primary btn-block btn-lg">Buy Tags</button></div></a>
+				<a href="<?php echo $base_path . '/tags/tag_buy.php' ?>"><div class="buttons col-lg-4 col-md-6 col-sm-10"><button type="button" class="btn btn-primary btn-block btn-lg">Buy Tags</button></div></a>
 				<div class="buttons col-lg-4 col-md-6 col-sm-10"><button type="button" class="btn btn-primary btn-block btn-lg">View Tags</button></div>
 				<div class="buttons col-lg-4 col-md-6 col-sm-10"><button type="button" class="btn btn-primary btn-block btn-lg">Community</button></div>	
 		</div>
@@ -15,7 +15,7 @@
  
 		<div class="part4">
 			<div class="container">
-			<h1>Promotions</h1><br>	 
+			<h1>Quick Purchase</h1><br>	 
 				<div class="row">
 					<div class=""> 
 					  <div class="col-sm-6 col-md-4 col-lg-3">

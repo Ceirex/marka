@@ -35,9 +35,9 @@
 						</form>
                     </ul>
                     <ul class="social">
-                        <li><a href="#"><img src="<?php echo $base_path . '/images/facebook.png'?>"></a></li>
-                        <li><a href="#"><img src="<?php echo $base_path . '/images/instagram.png'?>"></a></li>
-                        <li><a href="#"><img src="<?php echo $base_path . '/images/pinterest.png'?>"></a></li>
+                        <li><a href="#"><img src="<?php echo $base_path . '/images/facebook.png'?>" alt="Marak_logo"></a></li>
+                        <li><a href="#"><img src="<?php echo $base_path . '/images/instagram.png'?>" alt="Marak_logo"></a></li>
+                        <li><a href="#"><img src="<?php echo $base_path . '/images/pinterest.png'?>" alt="Marak_logo"></a></li>
                     </ul>
                 </div>
             </div>

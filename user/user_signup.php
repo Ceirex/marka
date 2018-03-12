@@ -68,7 +68,7 @@
 
 	<div id="header">
         
-            <h1>Register<h1>
+            <h1>Register</h1>
 	<hr>
 	</div>
 	
@@ -89,8 +89,7 @@
                 <br>
                 <br>
 
-		
-                
+		                
                 <label for="idusername">Username:</label>
 		<input type="text" name="yourusername" id="idusername" class="label_t">
 		
@@ -120,7 +119,7 @@
 		
                 
                 <label for="idphonenumber">Phone Number:</label>
-		<input type="text" name="yourphonenumber" id="idphone_number" class="label_t">
+		<input type="text" name="yourphonenumber" id="idphonenumber" class="label_t">
 		
                 <br>
                 <br>

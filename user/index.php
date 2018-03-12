@@ -1,13 +1,9 @@
 <?php include '../common/configuration.php';?>
-<?php include "../model/database.php"; ?>
+<?php include '../view/header.php';?>
 <?php include "../model/people_db.php";
-session_start();
 
 
-$message = '/user/index.php';
+include 'user_login.php';?>
 
-include 'user_login.php';
-echo $message;
-exit();
 
-?>
+<?php include '../view/footer.php';?>
