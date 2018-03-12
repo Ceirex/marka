@@ -4,7 +4,7 @@
 <div class="part3">
 	<div class="row">
 		<div class="container">		
-				<a href="<?php echo $base_path . '/beaches/index.php' ?>"><div class="buttons col-lg-4 col-md-6 col-sm-10"><button type="button" class="btn btn-primary btn-block btn-lg">Buy Tags</button></div></a>
+				<a href="<?php echo $base_path . '/beaches' ?>"><div class="buttons col-lg-4 col-md-6 col-sm-10"><button type="button" class="btn btn-primary btn-block btn-lg">Buy Tags</button></div></a>
 				<div class="buttons col-lg-4 col-md-6 col-sm-10"><button type="button" class="btn btn-primary btn-block btn-lg">View Tags</button></div>
 				<div class="buttons col-lg-4 col-md-6 col-sm-10"><button type="button" class="btn btn-primary btn-block btn-lg">Community</button></div>	
 		</div>
