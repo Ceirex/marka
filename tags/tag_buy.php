@@ -40,7 +40,7 @@
 		</div><br>
 
 		<div>
-			<input type="submit" value="Submit" />
+			<button type="button" class="btn btn-success">Submit</button>
 		</div>
 	</form>
 
