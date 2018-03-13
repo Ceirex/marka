@@ -29,10 +29,30 @@
 					<option value="Choice 3">Avalon</option>
 				</select>
 			<br><br>
+                        
+                        <label for="passes" class="label_t">Passes: </label>
+				<select name="select-choice" tabindex="5" id="passes">
+					<option value="Choice 1">Seasonal</option>
+					<option value="Choice 2">Weekly</option>
+					<option value="Choice 3">Daily</option>
+				</select>
+			<br><br>
 
 			<label for="zip" class="label_t">Zip: </label><input class="input_box" type="text" name="zip" id="zip" value="" tabindex="6"/>
 
+			<hr>
+                        
+                        <br><h3>Card Information</h3><hr>
+			<label for="name" class="label_t">Name on Card: </label><input class="input_box" type="text" name="name" id="city" value="" tabindex="4"/><br><br>
+                        <label for="number" class="label_t">Number: </label><input class="input_box" type="text" name="number" id="street" value="" tabindex="3"/><br><br>
+			<label for="cards" class="label_t">Security Code: </label>
+				<select name="select-choice" tabindex="5" id="cards">
+					<option value="Choice 1">Visa</option>
+					<option value="Choice 2">MasterCard</option>
+					<option value="Choice 3">Discover</option>
+				</select>
 			<br><br><hr>
+                        
 			<label for="qty_t" class="label_t">Qty Tags: </label><input type="text" name="qty_t" id="qty_t" value="" tabindex="7"/>
 			<br><br>
 

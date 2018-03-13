@@ -10,7 +10,7 @@
 			    <div class="thumbnail">
 		            <img src="https://blog.brother.es/wp-content/uploads/2013/03/Qr-Brother.png" alt="ocnj_seasonal">
 					<div class="caption">
-						<center><h3>Cap May</h3></center>
+						<center><h3>Cape May</h3></center>
 						<p style="color: black"><i>Seasonal</i></p>
 						<p><a href="#" class="btn btn-primary" role="button">View</a>  <a href="#" class="btn btn-danger" role="button">Remove</a></p>
 					</div>

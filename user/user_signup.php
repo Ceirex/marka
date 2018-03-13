@@ -123,16 +123,7 @@
 		
                 <br>
                 <br>
-		
                 
-                <label for="idcreditcard">Credit Card Number:</label>
-		<input type="text" name="yourcreditcard" id="idcreditcard" class="label_t">
-		
-               <br>
-               <br>
-		
-		
-           
 
 		<input type="submit" name="submitbutton" id="submitbutton" value="Register">
 		<br>
