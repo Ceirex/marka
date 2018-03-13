@@ -96,23 +96,78 @@ body {
 
 
 
-	.part4 {
-    	background-color: #f8f9fa; 
-		padding-top: 50px;
-		padding-bottom: 50px;
+	.part4 
+        {
+            background-color: #f8f9fa; 
+            padding-top: 50px;
+            padding-bottom: 50px;
 	}
 
 	.part4 .caption .thumbnail_p{
 		color: #05386B  ;
 	}
-
+        
 	.part4 .thumbnail>img {
 		width: 242px; 
 		height: 200px;
 		min-height: 200px;
 		min-width: 242px;
 	}
-
+        
+        .scan .screen>img
+        {
+            border: 100px;
+            width: 411px; 
+            height: 731px;
+            min-height: 200px;
+            min-width: 242px;
+        }
+        
+        .scan_btn
+        {
+            padding-left: 41.5%;
+            padding-bottom: 75px;
+        }
+        
+        .scan
+        {
+            padding-top: 75px;
+            padding-left: 40%;
+            margin: 0 auto;
+            width: 100%
+        }
+        
+        .scan .center-div
+        {
+            margin: 0 auto;
+            width: 100%
+        }
+        
+        .scan .center-div .caption
+        {
+            
+            padding-left: 250px;
+        }
+        
+        .scan_again
+        {
+            padding-top: 75px;
+            padding-bottom: 75px;
+            margin: 0 auto;
+            width: 100%
+        }
+        
+        .scan1
+        {
+            padding-left: 165px;
+        }
+        
+        .tag
+        {
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+        
 	.part5 .jumbotron {
 		background-color: #eceeef !important;
 	}
@@ -220,7 +275,6 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
-
 
 div.button
 {

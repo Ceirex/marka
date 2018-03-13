@@ -66,11 +66,17 @@
 		      </ul>
 
 		      <ul class="nav navbar-nav navbar-right" style="margin-top: 8px; padding-right: 25px; padding-left: 25px">
-                <li>
-                	<a style="padding-top: 0px;" href="<?php echo $base_path . '/user/index.php' ?>">
-                		<button type="button" class="btn btn-link" style="color: #EDF5E1;">Login</button></a>
-               		</a>
+                
+                        <li style="margin-left: 10px;">
+                            <a style="padding-top: 0px;" href="<?php echo $base_path . '/employee/index.php'; ?>">
+                                <button type="button" class="btn btn-link" style="color: #EDF5E1;">Employee</button></a>
+                        </li>
+                	
+                        <li style="margin-left: 10px;">
+                            <a style="padding-top: 0px;" href="<?php echo $base_path . '/user/index.php' ?>">
+                            <button type="button" class="btn btn-link" style="color: #EDF5E1;">Login</button></a>
            		</li>
+                        
 		        <li style="margin-left: 10px;">
 				<a style="padding-top: 0px;" href="<?php echo $base_path . '/user/user_signup.php'; ?>">
 		        	<button type="button" class="btn btn-success">Sign Up</button></li>
