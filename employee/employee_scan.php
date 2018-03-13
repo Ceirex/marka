@@ -23,7 +23,7 @@
 <div class="scan_btn">
 	<div class="row">
 		<div class="container">		
-                    <div class="scan1"><a href="employee_show.php" class="btn btn-primary" role="button">Scan</a></div>
+                    <br><div class="scan1"><a href="employee_show.php" class="btn btn-primary btn-lg" role="button">Scan</a></div>
 		</div>
 	</div>
 </div>
