@@ -197,18 +197,47 @@ body {
 		border: none;
 		width: 85%;
 	}
-
-	.part7 .buy_fourm .label_t{
-		display: inline-block;  
-		width: 70px; 
-		text-align: left;
-		font-size: 1.4rem;
-	}
-
-	.part7 .buy_fourm .input_box{
  
- 		font-size: 1.3em;
+	.part7 {
+		background-color: #eee	;
+		padding-bottom: 50px; 
+		padding-top: 50px;"
 	}
+
+	.part7 .f_row{
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+
+	.part7 .u_names{
+		background-color: #eee;
+		line-height: 25px;
+		border: none;
+		padding: 10px;
+	}
+
+
+  .inputWithIcon input[type=text], input[type=email], input[type=password], input[type=tel]{
+    padding-left:40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   	background-color: #eee;
+   	border: none;
+  }
+
+  
+  .inputWithIcon{
+	line-height: 30px;
+    position:relative;
+	padding-bottom: 15px;
+
+  }
+  
+ 
+  
+
+
+
 
 	.part8 .thumbnail>img {
 		width: 235px; 

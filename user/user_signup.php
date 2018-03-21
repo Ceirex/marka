@@ -1,17 +1,10 @@
 <?php include '../common/configuration.php';?>
 <?php include '../view/header.php';?>
 
-<div class="part7" style="background-color: #eee; padding-bottom: 50px; padding-top: 50px;">
-<div class="container">
 
- 	<div class="buy_fourm" style="background-color: #fff;border-radius: 15px; padding: 10px;">
- 		
 	
-	<formaction="#" method="post">
-
-		<div style="padding:40px;">
 <script>
-                "use strict";
+/*                "use strict";
                 
 		var validate = function(event){
                     
@@ -63,81 +56,62 @@
                 //tell the browser what to do when the form gets submitted
                 window.onload = function () {
                     document.getElementById('registered').onsubmit = function(event){validate(event);};
-                }
-	</script>
+                }*/
+</script>
 
-	<div id="header">
-        
-            <h1>Register</h1>
-	<hr>
-	</div>
-	
-	<div id="content">
-            <form name="registered" id="registered"  action="marka_login.php">
-                
-		<label for="idfirstname">First Name:</label>
-                <input type="text" name="yourfirstname" id="idfirstname" class="label_t">
-		
-                <br>
-                <br>
 
-		
-                
-                <label for="idlastname">Last Name:</label>
-		<input type="text" name="yourlastname" id="idlastname" class="label_t">
-		
-                <br>
-                <br>
+<div class="part7">
 
-		                
-                <label for="idusername">Username:</label>
-		<input type="text" name="yourusername" id="idusername" class="label_t">
-		
-                <br>
-                <br>
-		
-		
-                <label for="idpassword">Password:</label>
-		<input type="text" name="yourpassword" id="idpassword" class="label_t">
-                
-               <br>
-               <br>
-		
-               
-                <label for="idpasswordconfirm">Confirm Password:</label>
-		<input type="text" name="yourpasswordconfirm" id="idpasswordconfirm" class="label_t">
-                
-               <br>
-               <br>
-		
-                
-                <label for="idemail">Email Address:</label>
-		<input type="text" name="youremail" id="idemail" class="label_t">
-                
-               <br>
-               <br>
-		
-                
-                <label for="idphonenumber">Phone Number:</label>
-		<input type="text" name="yourphonenumber" id="idphonenumber" class="label_t">
-		
-                <br>
-                <br>
-                
+    <div class="container" >
+        <div class="mainstuff" style="background-color: #fff;">    
+            <div class="header" style="padding: 20px;">
+                <center>
+                    <h1>Registration</h1>
+                </center>
+            </div>        
 
-		<input type="submit" name="submitbutton" id="submitbutton" value="Register">
-		<br>
-		<br>
-		<div id="box">
-		</div>
-	</form>
-     	</div>
+        	<div id="content"><center>
+
+                <form name="registered" id="registered"  action="marka_login.php">
+            		
+                    <div class="f_row">
+                        <input class="u_names" size="30" type="text" name="yourfirstname" id="idfirstname" placeholder="First Name" tabindex="1" required="on"> 
+                        <input class="u_names" size="30" type="text" name="yourlastname" id="idlastname" placeholder="Last Name" tabindex="2" required="on">              
+                    </div> 
+
+                    <div class="inputWithIcon">
+                      <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                      <input type="text"  name="yourusername" id="idusername" placeholder="Username" size="59" tabindex="3" required="on">
+                    </div>
+
+                    <div class="inputWithIcon">
+                      <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+                      <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="&#013;- Must contain at least one number and one uppercase and lowercase letter &#013;- At least 8 or more characters"  name="yourpassword" id="idpassword" placeholder="Password" size="59" tabindex="4" required="on">
+                    </div>
+
+                    <div class="inputWithIcon">
+                      <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+                      <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="&#013;- Must contain at least one number and one uppercase and lowercase letter &#013;- At least 8 or more characters"  name="yourpasswordconfirm" id="idpasswordconfirm" placeholder="Confirm Password" size="59" tabindex="5" required="on">
+                    </div>
+
+                    <div class="inputWithIcon">
+                      <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                      <input type="email" name="youremail" id="idemail" placeholder="Email" size="59" tabindex="6" required="on">
+                    </div>
+
+                    <div class="inputWithIcon">
+                      <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+                      <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Use 215-204-7000 Pattern" name="yourphonenumber" id="idphonenumber" placeholder="Phone 215-204-7000" size="59" tabindex="7" required="on">
+                    </div>
+                    <br><br>
+                    <button type="submit"  class="btn btn-info btn-lg" id="submitbutton" tabindex="8">Register</button>
+    		 	                           		
+            	</form></center><br><br>
+             </div>
+        </div>
+     </div>
 </div>
- </div>
-
-	
-</div>
- </div>
+ 
 
 
 	
