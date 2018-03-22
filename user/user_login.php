@@ -1,16 +1,6 @@
-<?php include '../common/configuration.php';?>
 <?php include '../view/header.php';?>
- 
-<div class="part7" style="background-color: #eee; padding-bottom: 50px; padding-top: 50px;">
-<div class="container">
 
- 	<div class="buy_fourm" style="background-color: #fff;border-radius: 15px; padding: 10px;">
- 		
-	
-	<formaction="#" method="post">
-
-		<div style="padding:40px;">
-<script>
+<!-- <script>
                 "use strict";
                 
 		var validate = function(event){
@@ -33,42 +23,53 @@
                 window.onload = function () {
                     document.getElementById('loggedin').onsubmit = function(event){validate(event);};
                 }
-	</script>
+	</script> -->
 
-	<div id="header">
-        
-        <h2>Please log in</h2>
-	<hr>
-	</div>
+<div class="part7">
 	
-	<div id="content">
-            <form name="loggedin" id="loggedin"  action=""> <!-- Form needs an action after login -->
+	<div class="container">	
+
+	        <div class="mainstuff" style="width: 500px;">    
+			    <div class="header">
+			        <center>
+			            <h1 style="font-weight: bolder; color:rgba(5,56,107,.9);">Login</h1>
+			        </center><hr style="width: 75%">
+			    </div>     
+				<div id="content"><br><br>
+					<center>
+				        <form name="loggedin" id="loggedin"  action=""> <!-- Form needs an action after login -->
+						
+						<div class="inputWithIcon">
+							<label for="idusername" style="margin-right: 10px">Username:</label>
+							<input type="text" name="yourusername" id="idusername" size="30" maxlength="100" required="on" tabindex="1">
+						</div>
+
+
+
+						<div class="inputWithIcon">
+							<label for="idpassword" style="margin-right: 13px">Password:</label>
+							<input type="password" name="yourpassword" id="idpassword" size="30" maxlength="100" required="on" tabindex="2">
+						</div>
+
+							<br><br><br>
+							<a href="<?php echo $base_path . '/user/user_menu.php'; ?>"><button type="Submit" class="btn btn-primary btn-lg" tabindex="3">Submit</button></a>	
+						</form>
+
+
+					</center><br>
+				</div>
+	        </div>
 		
-		<label for="idusername">Username:</label>
-		<input type="text" name="yourusername" id="idusername" size="30" maxlength="100">
-		<br>
-		<br>
-		<label for="idpassword">Password:</label>
-		<input type="text" name="yourpassword" id="idpassword" size="30" maxlength="100">
-		<br>
-		<br>
 
 
-		<br>
 
-	</form>
 
-	<a href="<?php echo $base_path . '/user/user_menu.php'; ?>"><button type="button" class="btn btn-default">Submit</button></a>
-	
-	<a href="<?php echo $base_path . '/user/user_signup.php'; ?>"><button type="button" class="btn btn-success">Sign Up</button></a>
-	
+
 	</div>
-</div>
  </div>
 
 	
-</div>
- </div>
+<?php include '../view/footer.php';?>
 
 	
 	

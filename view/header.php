@@ -1,3 +1,6 @@
+<?php 
+header('Content-Type: text/html; charset=ISO-8859-1');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Muli|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu|Open Sans" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="<?php echo $base_path . '/css/main.css';?>">
 
 
@@ -27,13 +30,13 @@
 
 
 	<nav class="navbar navbar-default navbar-fixed-top">
-		<div id="navbarlists" class="container" style="padding: 10px;">
+		<div id="navbarlists" class="container" style="padding: 5px;">
 				
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		        <div class="navbar-header">
 				  <a class="navbar-brand" href="<?php echo $base_path; ?>">
-				    <img src="<?php echo $base_path . '/images/marka-logo.png'; ?>" width="80" height="80" alt="Marak_logo">
+				    <img src="<?php echo $base_path . '/images/marka-logo.png'; ?>" width="65" height="65" alt="Marak_logo">
 				  </a>
 			    </div>
 
@@ -51,9 +54,11 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-		      <ul class="nav navbar-nav" style="margin-left: 25%;">
+		      <ul class="nav navbar-nav" style="margin-left: 20%;">
+				<li><a href="<?php echo $base_path; ?>">Home</a></li>
 				<li><a href="<?php echo $base_path . '/beaches' ?>">Beaches</a></li>
- 
+				<li><a href="<?php echo $base_path; ?>">Tags</a></li>
+
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plan Your Trip<span class="caret"></span></a>
 			          <ul class="dropdown-menu">

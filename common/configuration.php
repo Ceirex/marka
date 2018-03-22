@@ -1,6 +1,6 @@
 <?php
     //this is for the database
-    $dsn = 'mysql:host=localhost;dbname=avclub';
+    $dsn = 'mysql:host=localhost;dbname=marka_db';
     $username = 'root';
     $password = 'password2996';
     

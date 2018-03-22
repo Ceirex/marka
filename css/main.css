@@ -1,5 +1,5 @@
 * {
-	font-family: Roboto !important;
+	font-family: Open Sans !important;
  
 }
 
@@ -17,7 +17,7 @@ body {
  
 
 .navbar {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	background-color: #05386B;
     margin: 0;
     border: 0;
@@ -29,7 +29,6 @@ body {
 
 .navbar-default .navbar-nav>li>a:hover {
     color: #EDF5E1;
-    background-color: rgba(0,0,0,.175);
 }
  
 /*Styling for index.php*/
@@ -41,11 +40,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	height: 700px;
+	height: 960px;
 	}
 
 	.part1 .myjumbotron {
-		padding-top: 150px;
+		padding-top: 10%;
 	}
 
 	.jumbotron {
@@ -58,7 +57,7 @@ body {
 
 
     .part2 {
-    	background-color: #EDF5E1;
+    	background-color: #fff;
     	padding: 40px;
     }
 
@@ -204,6 +203,18 @@ body {
 		padding-top: 50px;"
 	}
 
+	.part7 .mainstuff{
+		background-color: #fff; 
+		width: 650px;
+		margin: 0 auto; 
+		border-radius: 15px; 
+		box-shadow: 5px 5px #C0C0C0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-top: 40px;
+		margin-bottom: 70px;
+	}
+
 	.part7 .f_row{
 		padding-top: 10px;
 		padding-bottom: 20px;
@@ -211,27 +222,32 @@ body {
 
 	.part7 .u_names{
 		background-color: #eee;
-		line-height: 25px;
+		font-size: 1.2em;
 		border: none;
 		padding: 10px;
 	}
 
 
-  .inputWithIcon input[type=text], input[type=email], input[type=password], input[type=tel]{
-    padding-left:40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-   	background-color: #eee;
-   	border: none;
-  }
+	.inputWithIcon input[type=text], input[type=email], input[type=password], input[type=tel]{
+		padding-left: 30px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: #eee;
+		border: none;
+		font-size: 1.2em;
+	}
 
-  
-  .inputWithIcon{
-	line-height: 30px;
-    position:relative;
-	padding-bottom: 15px;
+	.inputWithIcon{
+		line-height: 30px;
+		position:relative;
+		padding-bottom: 15px;
+	}
 
-  }
+	#content .icon {
+		display: inline-block;
+		font-size:1.3em;
+	}
+
   
  
   
