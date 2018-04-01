@@ -70,10 +70,8 @@
                 </center><hr style="width: 75%">
             </div>        
 
-        	<div id="content" ><center>
-
+        	<div id="content" style="padding: 40px;"><center>
                 <form name="registered" id="registered"  action="marka_login.php">
-            		
                     <div class="f_row">
                         <input class="u_names" size="25" type="text" name="yourfirstname" id="idfirstname" placeholder="First Name" tabindex="1" required="on"> 
                         <input class="u_names" size="25" type="text" name="yourlastname" id="idlastname" placeholder="Last Name" tabindex="2" required="on">              
@@ -91,28 +89,27 @@
                             <label for="idpassword"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i></label>
                         </div>
                       <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="&#013;- Must contain at least one number and one uppercase and lowercase letter &#013;- At least 8 or more characters"  name="yourpassword" id="idpassword" placeholder="Password" size="50" tabindex="4" required="on">
-                      
                     </div>
 
                     <div class="inputWithIcon">
                         <div class="icon">
                             <label for="idpasswordconfirm"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i></label>
                         </div>
-                      <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="&#013;- Must contain at least one number and one uppercase and lowercase letter &#013;- At least 8 or more characters"  name="yourpasswordconfirm" id="idpasswordconfirm" placeholder="Confirm Password" size="50" tabindex="5" required="on">
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="&#013;- Must contain at least one number and one uppercase and lowercase letter &#013;- At least 8 or more characters"  name="yourpasswordconfirm" id="idpasswordconfirm" placeholder="Confirm Password" size="50" tabindex="5" required="on">
                     </div>
 
                     <div class="inputWithIcon">
                         <div class="icon">
                             <label for="idemail"><i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i></label>
                         </div>
-                      <input type="email" name="youremail" id="idemail" placeholder="Email" size="50" tabindex="6" required="on">
+                        <input type="email" name="youremail" id="idemail" placeholder="Email" size="50" tabindex="6" required="on">
                     </div>
 
                     <div class="inputWithIcon">
                         <div class="icon">
-                        <label for="idphonenumber"><i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i></label>
+                            <label for="idphonenumber"><i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i></label>
                         </div>
-                      <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Use 215-204-7000 format" name="yourphonenumber" id="idphonenumber" placeholder="Phone 215-204-7000" size="50" tabindex="7" required="on">
+                        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Use 215-204-7000 format" name="yourphonenumber" id="idphonenumber" placeholder="Phone 215-204-7000" size="50" tabindex="7" required="on">
                     </div>
                     <br><br>
 
