@@ -30,8 +30,6 @@ session_start();
 
 <body>
     
-
-
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div id="navbarlists" class="container" style="padding: 5px;">
 				
@@ -39,7 +37,7 @@ session_start();
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		        <div class="navbar-header">
 				  <a class="navbar-brand" href="<?php echo $base_path; ?>">
-				    <img src="<?php echo $base_path . '/images/marka-logo.png'; ?>" style="margin-top:-10px;" width="50" height="50" alt="Marak_logo">
+				    <img src="<?php echo $base_path . '/images/marka-logo.png'; ?>" style=" " width="55" height="55" alt="Marak_logo">
 				  </a>
 			    </div>
 
@@ -96,11 +94,11 @@ session_start();
 					        </li>';
 		        	}else {
 		        		echo '<li class="nav_useroptions">
-	                            <a style="padding-top: 0px;padding-right: 0px;" href="' . $base_path . '/user">
+	                            <a style="padding-top: 0px;padding-right: 0px;padding-bottom:2px;" href="' . $base_path . '/user">
 	                            <button type="button" class="btn btn-link" style="color: #EDF5E1;">Sign In </button></a>
 	           				  </li>';
 	           			echo '<li class="nav_useroptions">
-								<a style="padding-top: 0px;padding-right: 0px;" href="'. $base_path . '/user?signup">
+								<a style="padding-top: 0px;padding-right: 0px;padding-bottom:2px;" href="'. $base_path . '/user?signup">
 						        	<button type="button" class="btn btn-success">Sign Up</button>
 								</a>
 							  </li>';
@@ -118,8 +116,6 @@ session_start();
 
 		</div>
 	</nav>
-
-
 
     <main>
 

@@ -51,7 +51,9 @@
 							<input type="password" name="password" id="idpassword" size="30" maxlength="100" required="on" tabindex="2">
 						</div>
 
-							<br><br><br>
+							<br>
+								<p class="" style="padding: 10px;font-size: 1.2em;color:#EB0000"><?php echo $message; ?></p>
+							<br>
 							<button type="Submit" name="submit" class="btn btn-primary btn-lg" tabindex="3">Submit</button>
 						</form>
 

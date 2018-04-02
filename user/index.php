@@ -23,7 +23,7 @@ $message = "";
 	    $username = filter_input(INPUT_POST,'username');
 	    $password = filter_input(INPUT_POST,'password');
 	    $login_status = checklogin($username,$password);
-
+	    
 	    if (!empty($login_status)){
 	        session_start();
 	        $_SESSION['LOGGED_IN']='OK';
@@ -32,6 +32,9 @@ $message = "";
 
 	        header('Location: ../beaches');
 	        exit();
+	    }else{
+	    	$message = '<i class="fa fa-times-circle fa-lg fa-fw" aria-hidden="true"></i>';
+	    	$message .= " Incorrect Username and Passowrd";
 	    }
 	} 
 

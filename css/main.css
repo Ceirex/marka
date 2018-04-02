@@ -11,7 +11,7 @@
 }
 
 body {
-	padding-top: 70px;
+	padding-top: 60px;
 }
 
  
@@ -33,6 +33,7 @@ body {
  
 .nav_useroptions{
 	padding-top: 10px;
+	 
 }
 
 /*Styling for index.php*/
@@ -117,60 +118,65 @@ body {
 		min-width: 242px;
 	}
         
-        .scan .screen>img
-        {
-            border: 100px;
-            width: 411px; 
-            height: 731px;
-            min-height: 200px;
-            min-width: 242px;
-        }
-        
-        .scan_btn
-        {
-            padding-left: 41.5%;
-            padding-bottom: 75px;
-        }
-        
-        .scan
-        {
-            padding-top: 75px;
-            padding-left: 40%;
-            margin: 0 auto;
-            width: 100%
-        }
-        
-        .scan .center-div
-        {
-            margin: 0 auto;
-            width: 100%
-        }
-        
-        .scan .center-div .caption
-        {
-            
-            padding-left: 250px;
-        }
-        
-        .scan_again
-        {
-            padding-top: 75px;
-            padding-bottom: 75px;
-            margin: 0 auto;
-            width: 100%
-        }
-        
-        .scan1
-        {
-            padding-left: 165px;
-        }
-        
-        .tag
-        {
-            padding-top: 75px;
-            padding-bottom: 75px;
-        }
-        
+/* unknow code hmm
+{
+      
+             .scan .screen>img
+              {
+                  border: 100px;
+                  width: 411px; 
+                  height: 731px;
+                  min-height: 200px;
+                  min-width: 242px;
+              }
+              
+              .scan_btn
+              {
+                  padding-left: 41.5%;
+                  padding-bottom: 75px;
+              }
+              
+              .scan
+              {
+                  padding-top: 75px;
+                  padding-left: 40%;
+                  margin: 0 auto;
+                  width: 100%
+              }
+              
+              .scan .center-div
+              {
+                  margin: 0 auto;
+                  width: 100%
+              }
+              
+              .scan .center-div .caption
+              {
+                  
+                  padding-left: 250px;
+              }
+              
+              .scan_again
+              {
+                  padding-top: 75px;
+                  padding-bottom: 75px;
+                  margin: 0 auto;
+                  width: 100%
+              }
+              
+              .scan1
+              {
+                  padding-left: 165px;
+              }
+              
+              .tag
+              {
+                  padding-top: 75px;
+                  padding-bottom: 75px;
+              }
+}  */   
+
+
 	.part5 .jumbotron {
 		background-color: #eceeef !important;
 	}
@@ -226,23 +232,24 @@ body {
 
 	.part7 .u_names{
 		background-color: #eee;
-		font-size: 1.2em;
+		font-size: 1.1em;
 		border: none;
 		padding: 10px;
 	}
 
 
 	.inputWithIcon input[type=text], input[type=email], input[type=password], input[type=tel]{
-		padding-left: 30px;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding-left: 20px;
+		padding-top: 7px;
+		padding-bottom: 7px;
 		background-color: #eee;
 		border: none;
-		font-size: 1.2em;
+ 		border-bottom: 1px solid rgba(0,0,0, .1);
+ 		font-size: 1.2em;
 	}
 
 	.inputWithIcon{
-		line-height: 30px;
+		line-height: 25px;
 		position:relative;
 		padding-bottom: 15px;
 	}
@@ -252,21 +259,12 @@ body {
 		font-size:1.3em;
 	}
 
-  
- 
-  
-
-
-
-
-	.part8 .thumbnail>img {
+  	.part8 .thumbnail>img {
 		width: 235px; 
 		height: 200px;
 		min-height: 200px;
 		min-width: 235px;
 	}
-
-
 
 
 input#search-bar{

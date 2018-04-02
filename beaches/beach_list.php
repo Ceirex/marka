@@ -9,7 +9,7 @@ $beach_list = getBeaches();
 ?>
 
 	<div class="part5">
-		<div class="jumbotron">
+		<div class="jumbotron" style="padding-top: 5px;">
 			<div class="container"><br><br>
 			  <h1 class="beach_h">Pick Your Beach</h1><br>
 			  <p class="beach_p">Ocean Jersey has many beautiful beaches to choose from. Select your beach of choice from those listed below to get started.</p>
