@@ -31,6 +31,10 @@ body {
     color: #EDF5E1;
 }
  
+.nav_useroptions{
+	padding-top: 10px;
+}
+
 /*Styling for index.php*/
 
 	.part1 {

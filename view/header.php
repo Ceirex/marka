@@ -1,5 +1,7 @@
 <?php 
 header('Content-Type: text/html; charset=ISO-8859-1');
+session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en" ng-app>
@@ -37,7 +39,7 @@ header('Content-Type: text/html; charset=ISO-8859-1');
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		        <div class="navbar-header">
 				  <a class="navbar-brand" href="<?php echo $base_path; ?>">
-				    <img src="<?php echo $base_path . '/images/marka-logo.png'; ?>" width="65" height="65" alt="Marak_logo">
+				    <img src="<?php echo $base_path . '/images/marka-logo.png'; ?>" style="margin-top:-10px;" width="50" height="50" alt="Marak_logo">
 				  </a>
 			    </div>
 
@@ -69,26 +71,43 @@ header('Content-Type: text/html; charset=ISO-8859-1');
 			            <li><a href="#">Shopping</a></li>
 			            <li role="separator" class="divider"></li>
 			            <li><a href="#">Restaurants</a></li>
-		          </ul>
-		        </li>
+			          </ul>
+			        </li>
 		      </ul>
 
-		      <ul class="nav navbar-nav navbar-right" style="margin-top: 8px; padding-right: 25px; padding-left: 25px">
+		      <ul class="nav navbar-nav navbar-right">
                 
-                        <li style="margin-left: 10px;">
-                            <a style="padding-top: 0px;" href="<?php echo $base_path . '/employee/index.php'; ?>">
-                                <button type="button" class="btn btn-link" style="color: #EDF5E1;">Employee</button></a>
+                        <li>
+                            <a href="<?php echo $base_path . '/employee/index.php'; ?>">Employee [TEST]</a>
                         </li>
                 	
-                        <li>
-                            <a style="padding-top: 0px;padding-right: 0px;" href="<?php echo $base_path . '/user/index.php' ?>">
-                            <button type="button" class="btn btn-link" style="color: #EDF5E1;">Login</button></a>
-           				</li>
-                        
-		        <li>
-				<a style="padding-top: 0px;padding-right: 0px;" href="<?php echo $base_path . '/user/user_signup.php'; ?>">
-		        	<button type="button" class="btn btn-success">Sign Up</button></li>
-				</a>
+		        <?php 
+		        	if (isset($_SESSION['LOGGED_IN']) && $_SESSION['LOGGED_IN'] == "OK") {
+		       
+				       echo '
+				       		<li class="dropdown" class="usermenu">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, ' . ucwords($_SESSION["firstname"]) . '<span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Your Account</a></li>
+					            <li><a href="#">Your Tags</a></li>
+					            <li role="separator" class="divider"></li>
+								<li><a href="' . $base_path .'/user/index.php?logout">Sign Out</a></li>
+					          </ul>
+					        </li>';
+		        	}else {
+		        		echo '<li class="nav_useroptions">
+	                            <a style="padding-top: 0px;padding-right: 0px;" href="' . $base_path . '/user">
+	                            <button type="button" class="btn btn-link" style="color: #EDF5E1;">Sign In </button></a>
+	           				  </li>';
+	           			echo '<li class="nav_useroptions">
+								<a style="padding-top: 0px;padding-right: 0px;" href="'. $base_path . '/user?signup">
+						        	<button type="button" class="btn btn-success">Sign Up</button>
+								</a>
+							  </li>';
+		        	}
+		        ?>
+
+
 		      </ul><br>
 
 

@@ -37,22 +37,22 @@
 			    </div>     
 				<div id="content"><br><br>
 					<center>
-				        <form name="loggedin" id="loggedin"  action=""> <!-- Form needs an action after login -->
+				        <form id="login_form"  action="index.php" method="post"> <!-- Form needs an action after login -->
 						
 						<div class="inputWithIcon">
 							<label for="idusername" style="margin-right: 10px">Username:</label>
-							<input type="text" name="yourusername" id="idusername" size="30" maxlength="100" required="on" tabindex="1">
+							<input type="text" name="username" id="idusername" size="30" maxlength="100" required="on" tabindex="1">
 						</div>
 
 
 
 						<div class="inputWithIcon">
 							<label for="idpassword" style="margin-right: 13px">Password:</label>
-							<input type="password" name="yourpassword" id="idpassword" size="30" maxlength="100" required="on" tabindex="2">
+							<input type="password" name="password" id="idpassword" size="30" maxlength="100" required="on" tabindex="2">
 						</div>
 
 							<br><br><br>
-							<a href="<?php echo $base_path . '/user/user_menu.php'; ?>"><button type="Submit" class="btn btn-primary btn-lg" tabindex="3">Submit</button></a>	
+							<button type="Submit" name="submit" class="btn btn-primary btn-lg" tabindex="3">Submit</button>
 						</form>
 
 
