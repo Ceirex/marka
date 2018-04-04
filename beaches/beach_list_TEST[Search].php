@@ -4,7 +4,7 @@ include '../model/database.php';
 include '../model/beach_db.php';
 include '../common/functions.php';
 include '../view/header.php'; 
-$beach_list = getBeaches();
+$beaches = getBeaches();
 ?>
 
 <?php 
@@ -20,44 +20,65 @@ $beach_list = getBeaches();
 			  <p class="beach_p">Ocean Jersey has many beautiful beaches to choose from. Select your beach of choice from those listed below to get started.</p>
 		 		<br>
 				<div class="beach_search">
-					<input type="text" id="search-bar" placeholder="Search Beach..." >
+					<input type="text" id="search-bar" placeholder="Search Beach..." ng-model="beach_info">
 					<a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="part6" data-ng-init = "beaches=[
-	<?php   
-		foreach($beach_list as $beach){
-			echo "{name: " . $beach['beach_name'] .  "}";
-		} 
-	?>
+<div data-ng-init = "beach_list=[
+		<?php   
+			foreach($beaches as $beach){
+
+
+
+				echo "{name: '" . $beach['beach_name'] . "',
+					   img: '" . $beach['beach_img'] ."',
+					   loc: '" . $beach['beach_location'] ."',
+					   desc: '" . $beach['beach_desc'] ."'
+					  },";
+			} 
+		?> 
 	]">
+
+
+<div class="part6">
 		<div class="clearflix">
 			<div class="container">
-				<ul>
-					<li data-ng-repeat="beachlist in beaches">
-						{{ beachlist.name }}
-					</li>
-				</ul>
-				<!-- html code to generate beach list
-					<div class="row"><center><h2 style="margin-top: 0;font-weight: bold">Cape May</h2></center><br>	
+			
+<!-- 			<div data-ng-repeat="beach in beach_list | filter:beach_info">
+	
+	<h5>{{beach.name}}</h5>
+		<ul>
+			<li>{{beach.loc}}</li>
+			<li>{{beach.img}}</li>
+			<li>{{beach.desc}}</li>
+		</ul>
+	<br>
+
+</div> -->
+
+
+			<div data-ng-repeat="beach in beach_list | filter:beach_info">
+
+				<div class="row"><center><h2 style="margin-top: 0;font-weight: bold">{{beach.name}}</h2></center><br>	
 					<div class="col-lg-3 col-md-3 col-sm-12" style="margin-right: -15px; ">
-					                    <img style="float: left;" width="241px" height="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Cape_May_Beach_Ave_from_the_sea_3.JPG/1200px-Cape_May_Beach_Ave_from_the_sea_3.JPG" alt="cape_may">
+					                    <img style="float: left;" width="241px" height="200px" src="{{beach.img}}" alt="cape_may">
 						<a href="#"><button type="button" class="btn btn-success btn-lg" style="margin-top: 20px;">Choose Beach</button></a>
 					</div>
 					<div class="col-lg-9 col-md-9 col-sm-12" style="padding-left: 0">
-						<h4><b>Location:</b> Southern Point of New Jersey</h4><br>
-						<p style="color: black; text-align: justify;font-size: 1.2em"><b>Why it's awesome:</b> Cape May is a city and seaside resort at the tip of southern New Jersey’s Cape May Peninsula. It’s known for its grand Victorian houses such as the Emlen Physick Estate, now a museum with a preserved interior from the era. Shops and restaurants line the Washington Street Mall, 3 pedestrianized blocks of Washington Street. The Cape May Lighthouse provides views across the Delaware Bay and Atlantic Ocean.</p>
+						<h4><b>Location:</b>{{beach.loc}}</h4><br>
+						<p style="color: black; text-align: justify;font-size: 1.2em"><b>Why it's awesome:</b> {{beach.desc}}</p>
 					</div>
-				</div><hr> -->
-				
+				</div><hr>
 
+			</div>
 
 
 			</div>
 		</div>
 	</div>
+</div>
 
 <?php include '../view/footer.php'; ?>
