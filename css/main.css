@@ -6,21 +6,22 @@
 
 @media (max-width: 979px) {
   body {
-    padding-top: 70px;
+    padding-top: 50px;
   }
 }
 
 body {
-	padding-top: 60px;
+	padding-top: 50px;
 }
 
  
 
 .navbar {
 	font-size: 1.1em;
-	background-color: #05386B;
+	background-color: rgba(5,56,107,.9);
     margin: 0;
     border: 0;
+
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -102,18 +103,21 @@ body {
 
 	.part4 
         {
-            background-color: #f8f9fa; 
+            background-color: #F9FCFE; 
             padding-top: 50px;
             padding-bottom: 50px;
 	}
 
 	.part4 .caption .thumbnail_p{
-		color: #05386B  ;
+		color: #05386B;
+		font-size: .85em;
+		text-align: justify;
+		padding: 10px;
 	}
         
 	.part4 .thumbnail>img {
-		width: 242px; 
-		height: 200px;
+		width: 356px; 
+		height: 280px;
 		min-height: 200px;
 		min-width: 242px;
 	}
@@ -179,19 +183,17 @@ body {
 
 	.part5 .jumbotron {
 		background-color: #eceeef !important;
+		padding-top: 20px;
 	}
 
 	.part5 .beach_h{
 		color:  #05386B;
 	}
 
-	.part5 .beach_p{
-		color:  #05386B;
-	}
 
 	.part6 .row {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 
 	.part6 hr{
@@ -216,7 +218,7 @@ body {
 		box-shadow: 5px 5px #C0C0C0;
 		padding-top: 20px;
 		padding-bottom: 20px;
-		margin-top: 40px;
+		
 		margin-bottom: 70px;
 	}
 
@@ -230,6 +232,10 @@ body {
 		font-size: 1.1em;
 		border: none;
 		padding: 10px;
+	}
+
+	.part7 .tag_buy_table {
+		padding: 5px;
 	}
 
 

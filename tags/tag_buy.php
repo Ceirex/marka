@@ -1,60 +1,111 @@
 <?php include '../common/configuration.php';?>
-<?php include '../view/header.php';?>
+<?php include '../view/header.php';
+	
+	$user_fname = $_SESSION['firstname'];
+	$user_lname = $_SESSION['lastname'];
+
+	$_SESSION['beach_id'] = $_GET['beachid'];
+
+	$user_id = $_SESSION['user_id'];
+	$beach_id = $_SESSION['beach_id'];
+
+
+?>
  
  <div class="part7">
 <div class="container">
 
 
         <div class="mainstuff">    
-            <div class="header" style="padding: 20px;">
+            <div class="header" style="padding: 0px 20px 0px 20px;">
                 <center>
                     <h1 style="font-weight: bolder; color:rgba(5,56,107,.9);">Purchase</h1>
                 </center><hr>
-            </div>        
-		
-	<div id="content" style="padding: 40px;">
-				<form action="#" method="post">
-					<div>
-						<h3>Personal Info</h3><hr>
-						<label for="f_name" >First Name: </label><input class="input_box" width="30%;" style="margin-left: 10px;" type="text" name="f_name" id="f_name" value="" tabindex="1"/>
-						<label for="l_name" style="margin-left: 50px; ">Last Name: </label><input class="input_box" width="30%" style="margin-left: 10px;" type="text" name="l_name" id="l_name" value="" tabindex="2"/>
-						
-						<br><br>
-			                        
-			                        <label for="passes" class="label_t">Passes: </label>
-							<select name="select-choice" tabindex="5" id="passes">
-								<option value="Choice 1">Seasonal</option>
-								<option value="Choice 2">Weekly</option>
-								<option value="Choice 3">Daily</option>
-							</select>
-						<br><br>
-						<label for="qty_t" class="label_t">Qty Tags: </label><input type="text" name="qty_t" id="qty_t" value="" tabindex="7"/>
-						<br><br>
+            </div>  
 
-						<hr>
+		
+	<div id="content" style="padding: 0px 60px 40px 60px;">
+
+				<form action="index.php" method="post">
+					<div class="inputWithIcon">
+						<h3>Personal Info</h3>
+
+				<hr>	
+						<table>
+							<tr>
+								<td class="tag_buy_table"><label for="f_name" >First Name: </label></td>
+								<td class="tag_buy_table"><input type="text" name="f_name" id="f_name" size="30" maxlength="100" value="<?php echo ucfirst($user_fname) ?>" tabindex="1"></td>
+							</tr>
+							<tr>
+								<td class="tag_buy_table"><label for="l_name" >Last Name: </label></td>
+								<td class="tag_buy_table"><input type="text" name="l_name" id="l_name" size="30" maxlength="100" value="<?php echo ucfirst($user_lname); ?>" tabindex="2"></td>
+							</tr>
+						</table>
+			                       
+				<hr><br>
 			                        
-			                        <br><h3>Card Information</h3><hr>
+			            <h3>Card Information</h3><hr>
 
 						<label for="cards" class="label_t">Type: </label>
-							<select name="select-choice" tabindex="5" id="cards">
-								<option value="Choice 1">Visa</option>
-								<option value="Choice 2">MasterCard</option>
-								<option value="Choice 3">Discover</option>
-							</select><br>
+							<select name="card_type" tabindex="3" id="cards" >
+								<option value="Visa">Visa</option>
+								<option value="MasterCard">MasterCard</option>
+								<option value="Discover">Discover</option>
+							</select><br><br>
+			
+					<table cellpadding="10;">
+						<tr>
+							<td class="tag_buy_table"><label for="name_card" class="label_t">Name on Card: </label></td>
+							<td class="tag_buy_table"><input type="text" name="card_nameon" id="name_card" size="30" value="" tabindex="4"/></td>
+						</tr>
 
-						<label for="name" class="label_t">Name on Card: </label><input class="input_box" type="text" name="name" id="city" value="" tabindex="4"/><br><br>
-			                        <label for="number" class="label_t">Number: </label><input class="input_box" type="text" name="number" id="street" value="" tabindex="3"/><br><br>
-			                        <label for="number" class="label_t">Exp: </label><input class="input_box" type="text" name="number" id="street" value="" tabindex="3"/><br><br>
+						<tr>
+							<td class="tag_buy_table"><label for="card_num" class="label_t">Number: </label></td>
+							<td class="tag_buy_table"><input type="text" name="card_num" id="card_num" size="30" value="" tabindex="5"/></td>
+						</tr>
 
-						<br><br><hr>
+						<tr>
+							<td class="tag_buy_table"><label for="card_exp" class="label_t">Exp: </label></td>
+							<td class="tag_buy_table"><input type="text" name="card_exp" id="card_exp" size="15" value="" tabindex="6"/></td>
+						</tr>
+
+						<tr>
+							<td class="tag_buy_table"><label for="tag_qty" class="label_t">Qty Tags: </label></td>
+							<td class="tag_buy_table"><input type="text" name="tag_qty" id="tag_qty" size="10" value="" tabindex="7"/></td>
+						</tr>
+
+					</table>
+
+				<hr><br>
 			                        
+			            <h3>Beach Information</h3><hr>
+
+				<h4 style="margin-top: 0;"><?php echo $beach_info['beach_name']; ?></h4>
+
+					<div style="padding-top: 5px;">
+						<h4 style="color: black; font-size: 1.0em"><b>Location: </b><?php echo $beach_info['beach_location']; ?></h4>
+
+						<p style="color: black; text-align: justify;font-size: .95em"><b>Why it's awesome: </b><?php echo $beach_info['beach_desc']; ?></p>
+					</div>
+					<div>
+					    <center><img width="211px" height="170px" src="<?php echo $beach_info['beach_img']; ?>" alt="cape_may"></center>
+					</div>
+
+
+					<a href="<?php echo $base_path . '/beaches' ?>"><button type="button" class="btn btn-info btn-md" style="margin-top: 20px;">Go Back</button></a>
+
+
+				<br><hr>
+
 						<label for="checkbox"><a href="#">Agree to Terms</a></label>
 						<input style="margin-left: 5px;" type="checkbox" name="checkbox" id="checkbox" tabindex="8" />
 				
 					</div><br>
 					
 					<div>
-						<a href="#"><button type="button" class="btn btn-success" tabindex="9">Submit</button></a>
+						<input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
+						<input type="hidden" name="beach_id" value="<?php echo $beach_id; ?>">
+						<button type="Submit" name="submit" class="btn btn-success btn-lg" tabindex="9">Submit</button>
 					</div>
 				</form></div>
 		</div>

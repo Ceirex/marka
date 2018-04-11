@@ -8,7 +8,7 @@
 
 <div class="jumbotron" style="padding: 20px 35px 40px 40px">
   <h1>We are Marka</h1><br>
-  <p>Marka is a technology company that believes in accessibility and community building. Those that want to spend time on one of New Jersey’s beautiful beaches should be able to do so without the hassle and waste of a conventional beach badge while supporting the neighborhood in which they choose to stay.</p> <br>
+  <p>Marka is a technology company that believes in accessibility and community building. Those that want to spend time on one of New Jersey beautiful beaches should be able to do so without the hassle and waste of a conventional beach badge while supporting the neighborhood in which they choose to stay.</p> <br>
   <p><a class="btn btn-info btn-lg" href="<?php echo $base_path . '/beaches' ?>" role="button">Get Started</a></p>
 </div>
 

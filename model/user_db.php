@@ -2,7 +2,7 @@
 /*if there is not a person match, then return false.  Otherwise return the person_id. */
 function checklogin($username,$password){
     global $db;
-    $statement = $db->prepare('SELECT id, firstname FROM users where username=:username and password = :password');
+    $statement = $db->prepare('SELECT id, firstname, lastname FROM users where username=:username and password = :password');
     $statement->bindValue(':username',$username);
     $statement->bindValue(':password',$password);
     $statement->execute();

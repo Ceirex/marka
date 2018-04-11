@@ -29,6 +29,7 @@ $message = "";
 	        $_SESSION['LOGGED_IN']='OK';
 	        $_SESSION['user_id'] = $login_status['id'];
 	        $_SESSION['firstname'] =  $login_status['firstname'];
+	        $_SESSION['lastname'] =  $login_status['lastname'];
 
 	        header('Location: ../beaches');
 	        exit();

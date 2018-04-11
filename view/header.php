@@ -31,7 +31,7 @@ session_start();
 <body>
     
 	<nav class="navbar navbar-default navbar-fixed-top">
-		<div id="navbarlists" class="container" style="padding: 5px;">
+		<div id="navbarlists" class="container" style="padding: 0px;">
 				
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -55,18 +55,15 @@ session_start();
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-		      <ul class="nav navbar-nav" style="margin-left: 20%;">
+		      <ul class="nav navbar-nav" style="margin-left: 30%;">
 				<li><a href="<?php echo $base_path; ?>">Home</a></li>
 				<li><a href="<?php echo $base_path . '/beaches' ?>">Beaches</a></li>
-				<li><a href="<?php echo $base_path; ?>">Tags</a></li>
 
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plan Your Trip<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			            <li><a href="#">Activities</a></li>
-			            <li><a href="#">Events</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#">Shopping</a></li>
+			            <li><a href="<?php echo $base_path . '/planyourtrip?events' ?>">Events</a></li>
 			            <li role="separator" class="divider"></li>
 			            <li><a href="#">Restaurants</a></li>
 			          </ul>
@@ -87,7 +84,7 @@ session_start();
 					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, ' . ucwords($_SESSION["firstname"]) . '<span class="caret"></span></a>
 					          <ul class="dropdown-menu">
 					            <li><a href="#">Your Account</a></li>
-					            <li><a href="#">Your Tags</a></li>
+					            <li><a href="' . $base_path . '/user/user_menu.php">Your Tags</a></li>
 					            <li role="separator" class="divider"></li>
 								<li><a href="' . $base_path .'/user/index.php?logout">Sign Out</a></li>
 					          </ul>
