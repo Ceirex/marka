@@ -111,7 +111,6 @@ background: -o-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(41,184,229,1) 2%
 background: -ms-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(41,184,229,1) 2%, rgba(179,220,237,1) 40%, rgba(249,252,254,1) 100%);
 background: linear-gradient(to bottom, rgba(41,184,229,1) 0%, rgba(41,184,229,1) 2%, rgba(179,220,237,1) 40%, rgba(249,252,254,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', endColorstr='#f9fcfe', GradientType=0 );
-
 	}
 
 	.part4 .caption .thumbnail_p{
@@ -244,26 +243,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', end
 		padding: 5px;
 	}
 
-	.part8{
-
-	}
-
-.part8row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create two equal columns that sits next to each other */
-.part8column {
-  flex: 50%;
-  padding: 0 4px;
-}
-
-.part8column>img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
 
 
 	.inputWithIcon input[type=text], input[type=email], input[type=password], input[type=tel]{

@@ -8,7 +8,7 @@
 	<div class="top" style="background-color: #50A7E1; height: 400px;">
 		
 	</div>
-			<div class="container" style="background-color:; padding-top: px; padding-bottom: 50px; margin-top: -23%;">
+			<div class="container" style="padding-top: px; padding-bottom: 50px; margin-top: -23%;">
 				<div class="row">
 					<h1 style="color: #05386B">Events</h1><br>
 					<p style="font-size: 1.2em; color: #05386B">Browse the awesome events that are happing in New Jersey near beach area. NJ is a northeastern U.S. state with some 130 miles of Atlantic coast. The Jersey Shore includes notable resort towns like historic Asbury Park and Cape May, with its preserved Victorian buildings.</p style="font-size: 1.1em; color: ">
