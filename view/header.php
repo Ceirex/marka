@@ -62,7 +62,7 @@ session_start();
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plan Your Trip<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#">Activities</a></li>
+			            <li><a href="<?php echo $base_path . '/planyourtrip?activities' ?>">Activities</a></li>
 			            <li><a href="<?php echo $base_path . '/planyourtrip?events' ?>">Events</a></li>
 			            <li role="separator" class="divider"></li>
 			            <li><a href="#">Restaurants</a></li>

@@ -34,7 +34,7 @@
 						<table>
 							<tr>
 								<td class="tag_buy_table"><label for="f_name" >First Name: </label></td>
-								<td class="tag_buy_table"><input type="text" name="f_name" id="f_name" size="30" maxlength="100" value="<?php echo ucfirst($user_fname) ?>" tabindex="1"></td>
+								<td class="tag_buy_table"><input type="text" required="on"> name="f_name" id="f_name" size="30" maxlength="100" value="<?php echo ucfirst($user_fname) ?>" tabindex="1"></td>
 							</tr>
 							<tr>
 								<td class="tag_buy_table"><label for="l_name" >Last Name: </label></td>

@@ -12,4 +12,10 @@
 		exit();
 	}
 
+	if (isset($_GET['activities'])){
+		include 'activities.php';
+		exit();
+	}
+
+
 ?>
