@@ -1,9 +1,17 @@
 <?php include '../common/configuration.php';?>
 
 
+<?php
+	
+	if (isset($_GET['scan'])){
+		include 'employee_scan.php';
+		exit();
+	}
 
 
-
-<?php include 'employee_dashboard.php';?>
+include 'employee_dashboard.php';
+exit();
+ 
+ ?>
 
 

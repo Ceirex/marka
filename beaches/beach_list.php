@@ -16,7 +16,7 @@ $beaches = getBeaches();
 			  <p class="beach_p" style="font-size: 1.1em; color: #05386B;padding-left:25px">Ocean Jersey has many beautiful beaches to choose from. Select your beach of choice from those listed below to get started.</p>
 				
 				<div class="beach_search" style="padding-left: 25px;">
-					<input  type="text" id="search-bar" placeholder="Search Beach..." ng-model="beach_info">
+					<input  type="text" id="search-bar" placeholder="Search Beach..." ng-model="beach_info" tabindex="1">
 					<a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
 				</div>
 
