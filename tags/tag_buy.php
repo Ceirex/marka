@@ -93,7 +93,8 @@
 
 
 					<a href="<?php echo $base_path . '/beaches' ?>"><button type="button" class="btn btn-info btn-md" style="margin-top: 20px;">Go Back</button></a>
-
+                                        
+                                       
 
 				<br><hr>
 
@@ -109,7 +110,7 @@
 					</div>
 				</form></div>
 		</div>
-
+    
 	</div>
 </div>
 
