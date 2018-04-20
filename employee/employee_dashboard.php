@@ -3,79 +3,61 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
 
+
+
 <div class="container-fluid">
       <div class="row">
 
-        <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link">Overview</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Reports</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Analytics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Export</a>
-            </li>
-          </ul>
+        <div class="" >
+                <nav class="col-sm-6 col-md-2" style="background-color: #f7f7f7; height: 100%; position: fixed;">
+                  <ul class="nav" style="padding:25px 0px 20px 0px;font-size: 1.1em;">
+                   <br> <li class="nav-item"><a class="nav-link btn btn-primary btn-md" href="<?php echo $base_path . '/employee?scan' ?>" style="font-size: 1.2em">Scan Tag</a></li><br>
+                    <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign Out</a></li>
+                  </ul>
+                </nav>
+        </div> 
 
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nav item</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nav item again</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">One more nav</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Another nav item</a>
-            </li>
-          </ul>
-
-
-        </nav>
-
-        <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
-          <h1>Dashboard</h1>
+<div class="clearfix"  style="padding-top: 20px; padding-left:10px; margin-left: 17%;">
+         <main class="col-sm-9 col-md-10 ">
+          <h1>Dashboard</h1><hr>
 
           <section class="row text-center placeholders">
             <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <div class="text-muted">Something else</div>
+              <img src="https://www.shareicon.net/data/512x512/2016/08/18/810612_sun_512x512.png" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4><a href="#">Beaches</a></h4>
+              <div class="text-muted">Edit Beaches Info</div>
             </div>
-            <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-          </section>
 
-          <h2>Section title</h2>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="https://fliphound.com/Style_Home/images/splash/Advertisers-Section.png" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4><a href="#">Events & Ads</a></h4>
+              <span class="text-muted">Edits events and ads</span>
+            </div>
+
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Curation_tool_tag_icon.svg/2000px-Curation_tool_tag_icon.svg.png" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4><a href="#">Tags</a></h4>
+              <span class="text-muted">Edit Tags</span>
+            </div>
+
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="http://www.stickpng.com/assets/images/585e4bf3cb11b227491c339a.png" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4><a href="#">Users</a></h4>
+              <span class="text-muted">Edit User Acc</span>
+            </div>
+          </section><br>
+
+          <h2>Tag History</h2><hr>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
+                  <th># ID</th>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Location</th>
+                  <th>Date/Time</th>
                 </tr>
               </thead>
               <tbody>
@@ -194,7 +176,9 @@
               </tbody>
             </table>
           </div>
-        </main>
+        </main> 
+</div>
+
       </div>
     </div>
 

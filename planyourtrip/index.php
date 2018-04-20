@@ -17,5 +17,10 @@
 		exit();
 	}
 
+	if (isset($_GET['restaurants'])){
+		
+		include 'restaurants.php';
+		exit();
+	}
 
 ?>
