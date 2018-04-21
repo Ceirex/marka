@@ -127,68 +127,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', end
 		min-width: 242px;
 	}
         
-/* unknow code hmm
-{
-      
-             .scan .screen>img
-              {
-                  border: 100px;
-                  width: 411px; 
-                  height: 731px;
-                  min-height: 200px;
-                  min-width: 242px;
-              }
-              
-              .scan_btn
-              {
-                  padding-left: 41.5%;
-                  padding-bottom: 75px;
-              }
-              
-              .scan
-              {
-                  padding-top: 75px;
-                  padding-left: 40%;
-                  margin: 0 auto;
-                  width: 100%
-              }
-              
-              .scan .center-div
-              {
-                  margin: 0 auto;
-                  width: 100%
-              }
-              
-              .scan .center-div .caption
-              {
-                  
-                  padding-left: 250px;
-              }
-              
-              .scan_again
-              {
-                  padding-top: 75px;
-                  padding-bottom: 75px;
-                  margin: 0 auto;
-                  width: 100%
-              }
-              
-              .scan1
-              {
-                  padding-left: 165px;
-              }
-              
-              .tag
-              {
-                  padding-top: 75px;
-                  padding-bottom: 75px;
-              }
-}  */   
-
 
 	.part5 .jumbotron {
 		background-color: #eceeef !important;
-		padding-top: 20px;
+		padding-top: 25px;
 	}
 
 	.part5 .beach_h{
