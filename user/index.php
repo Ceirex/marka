@@ -9,6 +9,10 @@
 
 $message = "";
 
+if (!isset($message_signup)){
+	$message_signup = "";
+}
+
 	if (isset($_GET['logout'])){
 		header('Location: ../user/user_logout.php');
 	    exit();
@@ -49,8 +53,7 @@ $message = "";
 		$phone = filter_input(INPUT_POST,"phone");
 
 		$result_reguser = registeruser($firstname,$lastname,$username,$password,$email,$phone);
-
-		print_r($result_reguser);
+		$message_signup = "You have singed up successfully";
 	}
 
 

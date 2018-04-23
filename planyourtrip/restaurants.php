@@ -1,16 +1,42 @@
 <?php include '../view/header.php'; ?>
 
+<script type="text/javascript">
+  /*getjson and generate beach_info*/
+    $(document).ready(function() {
+        
+        //here's where we populate the select tag with options
+        $.getJSON('../services?beachmapinfo',function(data){
+            for(var i=0;i<data.length;i++) {
+                var my_new_option = '<option' + ' value= "' + data[i]['beach_name']  + '">' + data[i]['beach_name']  + '</option>';
+                $("#beach_list").append(my_new_option);
+            }
+        });
+    });
 
-    <script>
-      // This example requires the Places library. Include the libraries=places
-      // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+    /*change map long and lat depending on beach selected*/ 
+</script>
 
-      var map;
+<script>
+    var lati = 38.988914;
+    var longt = -74.819824;
+      // Google maps Place Finder API with long & latui inputed
+    var map;
+
+  function changemap(){
+    var choice = document.getElementById("beach_list").value;
+
+    if (choice == "Cape Map") {
+      lati = 38.9351125;
+      longt = -74.9060053;
+        alert(lati);
+      };
+
+    alert(choice);
+  };
 
       function initMap() {
         // Create the map.
-        var pyrmont = {lat: 38.988914, lng: -74.819824};
+        var pyrmont = {lat: lati, lng: longt};
         map = new google.maps.Map(document.getElementById('map'), {
           center: pyrmont,
           zoom: 10
@@ -38,9 +64,7 @@
                 pagination.nextPage();
               };
             });
-
       }
-
 
       function createMarkers(places) {
         var bounds = new google.maps.LatLngBounds();
@@ -73,26 +97,28 @@
       }
 
 
-
-
-    </script>
+</script>
 
 
 <div class="part10">
 
 	<div class="jumbotron jumbotron-fluid" style="background-color: #eee;margin-bottom: 0px;">
-	  <div class="container" style="background-color: rgba(0,0,0,.1);padding: 30px;border-radius: 30px;">
+	  <div class="container" style="background-color: rgba(0,0,0,.1);padding: 0px 30px 10px 30px;border-radius: 30px;">
 		
 		<div class="resheader">
 			<img src="https://cdn2.iconfinder.com/data/icons/map-locations-flat-pixel-perfect/64/pin-map-location-19-512.png" height="150" width="100" /><h1 style="color: #05386B">Restaurants</h1>
 		</div>
 	    
-		<div class="resp" style="clear: both;padding: 25px 10px 20px 10px">
+		<div class="resp" style="clear: both;padding: 25px 10px 20px 0px">
 			    <p class="lead" style="color: #05386B">Don't go forgot to plan out where you eat. Going hungary sucks, browse the awesome restaurant near the beach you are planning to visit.</p><br>
-			    <a class="btn btn-success btn-lg" href="#map" role="button">Get Started</a><br>
+
+			    <select id="beach_list" name="beach" onchange="changemap()">
+              <option value='choice'>Please make a choice</option>            
+          </select>
+
+          <a class="btn btn-success btn-lg" href="#map" role="button">Get Started</a><br>
 			  </div>	
 		</div>
-
 	</div>
 
     <div id="map"></div>

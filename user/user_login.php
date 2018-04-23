@@ -44,8 +44,6 @@
 							<input type="text" name="username" id="idusername" size="30" maxlength="100" required="on" tabindex="1">
 						</div>
 
-
-
 						<div class="inputWithIcon">
 							<label for="idpassword" style="margin-right: 13px">Password:</label>
 							<input type="password" name="password" id="idpassword" size="30" maxlength="100" required="on" tabindex="2">
@@ -56,6 +54,8 @@
 							<br>
 							<button type="Submit" name="submit" class="btn btn-primary btn-lg" tabindex="3">Submit</button>
 						</form>
+						<br>
+						<h3 style="color: #1E9E1E"><?php echo $message_signup; ?></h3 >
 
 
 					</center><br>

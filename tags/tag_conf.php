@@ -23,7 +23,6 @@
         var tag_insert = $('#tag_insert').val();
         var url = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+ tag_insert;
         $('#qrcode').attr('src',url);
-
 </script>
 
 
