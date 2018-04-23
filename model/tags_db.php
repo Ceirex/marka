@@ -1,11 +1,11 @@
 <?php
 
 /*register user and put there details into db*/
-function insertTag($uf_name, $ul_name, $card_type, $nameoncard, $card_num,  $card_exp, $tag_qty, $user_id, $beach_id){
+function insertTag($uf_name, $ul_name, $card_type, $nameoncard, $card_num,  $card_exp, $tag_qty, $user_id, $beach_id, $tag_type){
 
     global $db;
-    $sql = "INSERT INTO `tags` (`beach_id`, `user_id`, `date_purchase`, `uf_name`, `ul_name`, `card_type`, `nameoncard`, `card_num`, `card_exp`, `tag_qty`)  
-    		VALUES (:beachid, :userid, NOW(), :ufname, :ulname, :cardtype, :nameoncard, :cardnum, :cardexp, :tagqty)";
+    $sql = "INSERT INTO `tags` (`beach_id`, `user_id`, `date_purchase`, `uf_name`, `ul_name`, `card_type`, `nameoncard`, `card_num`, `card_exp`, `tag_qty`, `type`)  
+    		VALUES (:beachid, :userid, NOW(), :ufname, :ulname, :cardtype, :nameoncard, :cardnum, :cardexp, :tagqty, :type)";
     $statement = $db->prepare($sql);
     $statement->bindValue(':beachid',$beach_id);
     $statement->bindValue(':userid',$user_id);
@@ -16,6 +16,7 @@ function insertTag($uf_name, $ul_name, $card_type, $nameoncard, $card_num,  $car
     $statement->bindValue(":cardnum",$card_num);
     $statement->bindValue(":cardexp",$card_exp);
     $statement->bindValue(":tagqty",$tag_qty);
+    $statement->bindValue(":type",$tag_type);
     $result = $statement->execute();   
     $statement->closeCursor();
     

@@ -7,27 +7,6 @@
 
 
 <?php 
-
-	if (isset($_POST['submit'])){
-	    $uf_name = htmlentities(filter_input(INPUT_POST,'f_name'));
-	    $ul_name = htmlentities(filter_input(INPUT_POST,'l_name'));
-	    $card_type = htmlentities(filter_input(INPUT_POST,'card_type'));
-	    $nameoncard = htmlentities(filter_input(INPUT_POST,'card_nameon'));
-	    $card_num = htmlentities(filter_input(INPUT_POST,'card_num'));
-	    $card_exp = htmlentities(filter_input(INPUT_POST,'card_exp'));
-	    $tag_qty = htmlentities(filter_input(INPUT_POST,'card_type'));
-
-	    $user_id = htmlentities(filter_input(INPUT_POST,'user_id'));
-	    $beach_id = htmlentities(filter_input(INPUT_POST,'beach_id'));
-	    
-	     $tag_insert = insertTag($uf_name, $ul_name, $card_type, $nameoncard, $card_num,  $card_exp, $tag_qty, $user_id, $beach_id);
-
-
-	    include 'tag_conf.php';
-	    exit();
-	} 
-
-
 	$user_id = $_GET['userid'];
 	$beach_id = $_GET['beachid'];
 
@@ -39,7 +18,35 @@
 		exit();
 	}
 
-		
+	if ($user_id == 1) {
+		include '../user/index.php';
+		exit();
+	}
+
+	if (isset($_POST['submit'])){
+	    $uf_name = htmlentities(filter_input(INPUT_POST,'f_name'));
+	    $ul_name = htmlentities(filter_input(INPUT_POST,'l_name'));
+	    $card_type = htmlentities(filter_input(INPUT_POST,'card_type'));
+	    $nameoncard = htmlentities(filter_input(INPUT_POST,'card_nameon'));
+	    $card_num = htmlentities(filter_input(INPUT_POST,'card_num'));
+	    $card_exp = htmlentities(filter_input(INPUT_POST,'card_exp'));
+	    $tag_qty = htmlentities(filter_input(INPUT_POST,'card_type'));
+		$tag_type = htmlentities(filter_input(INPUT_POST,'tag_type'));
+	    $user_id = htmlentities(filter_input(INPUT_POST,'user_id'));
+	    $beach_id = htmlentities(filter_input(INPUT_POST,'beach_id'));
+	    
+	    $tag_type = ucfirst($tag_type);
+
+	    $tag_insert = insertTag($uf_name, $ul_name, $card_type, $nameoncard, $card_num,  $card_exp, $tag_qty, $user_id, $beach_id, $tag_type);
+
+	    include 'tag_conf.php';
+	    exit();
+	} 
+
+
+
+
+
 
 
 	include '../user/index.php';
