@@ -14,6 +14,20 @@ function checklogin($username,$password){
     return $result;    
 }
 
+function checklogin2($username,$password){
+    global $db;
+    $statement = $db->prepare('SELECT id, firstname, lastname FROM users where username=:username and password = :password and rights = 1');
+    $statement->bindValue(':username',$username);
+    $statement->bindValue(':password',$password);
+    $statement->execute();
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    $statement->closeCursor();
+    if (empty($result['id'])){
+        $result = false;
+    } 
+    return $result;    
+}
+
 /*register user and put there details into db*/
 function registeruser($firstname,$lastname,$username,$password,$email,$phone){
     global $db;

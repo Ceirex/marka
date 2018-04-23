@@ -40,5 +40,19 @@ function tagPull($userid)
     return $result;
 }
 
+function tagRecord($tag_id)
+{
+    
+    global $db;
+    $sql = "SELECT users.firstname, users.lastname, tags.tag_id, beaches.beach_name FROM tags, users, beaches WHERE tags.user_id = users.id AND tags.beach_id = beaches.beach_id AND tags.tag_id = :tag_id";
+    $statement = $db->prepare($sql);
+    $statement->bindValue(':tag_id', $tag_id);
+    $statement->execute();
+    $result = $statement->fetchAll();   
+    $statement->closeCursor();
+    
+    return $result;
+}
+
 
 ?>
