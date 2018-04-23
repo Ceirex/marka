@@ -41,6 +41,7 @@
             $_SESSION['firstname'] =  $login_status['firstname'];
             $_SESSION['lastname'] =  $login_status['lastname'];
 
+            
             include 'employee_dashboard.php';
             exit();
         }
