@@ -24,7 +24,7 @@
 					      <div class="caption">
 					        <h3>OCNJ Seasonal</h3>
 					        <p class="thumbnail_p">$25</p>
-					        <p><a href="#" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
+                                                <p><a href="../tags/tag_buy.php?quick_id=1" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
 					      </div>
 					    </div>
 					  </div>
@@ -35,7 +35,7 @@
 					      <div class="caption">
 					        <h3>OCNJ Weekly</h3>
 					        <p class="thumbnail_p">$15</p>
-					        <p><a href="#" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
+					        <p><a href="../tags/tag_buy.php?quick_id=2" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
 					      </div>
 					    </div>
 					  </div>
@@ -46,7 +46,7 @@
 					      <div class="caption">
 					        <h3>Wildwood Seasonal</h3>
 					        <p class="thumbnail_p">$25</p>
-					        <p><a href="#" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
+					        <p><a href="../tags/tag_buy.php?quick_id=3" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
 					      </div>
 					    </div>
 					  </div>
@@ -57,7 +57,7 @@
 					      <div class="caption">
 					        <h3>Wildwood Weekly</h3>
 					        <p class="thumbnail_p">$15</p>
-					        <p><a href="#" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
+					        <p><a href="../tags/tag_buy.php?quick_id=4" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
 					      </div>
 					    </div>
 					  </div>
@@ -68,7 +68,7 @@
 					      <div class="caption">
 					        <h3>Cape May Seasonal</h3>
 					        <p class="thumbnail_p">$25</p>
-					        <p><a href="#" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
+					        <p><a href="../tags/tag_buy.php?quick_id=5" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
 					      </div>
 					    </div>
 					  </div>
@@ -79,7 +79,7 @@
 					      <div class="caption">
 					        <h3>Cape May Weekly</h3>
 					        <p class="thumbnail_p">$15</p>
-					        <p><a href="#" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
+					        <p><a href="../tags/tag_buy.php?quick_id=6" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
 					      </div>
 					    </div>
 					  </div>
@@ -90,7 +90,7 @@
 					      <div class="caption">
 					        <h3>Avalon Seasonal</h3>
 					        <p class="thumbnail_p">$25</p>
-					        <p><a href="#" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
+					        <p><a href="../tags/tag_buy.php?quick_id=7" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
 					      </div>
 					    </div>
 					  </div>
@@ -101,7 +101,7 @@
 					      <div class="caption">
 					        <h3>Avalon Weekly</h3>
 					        <p class="thumbnail_p">$15</p>
-					        <p><a href="#" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
+					        <p><a href="../tags/tag_buy.php?quick_id=8" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
 					      </div>
 					    </div>
 					  </div>

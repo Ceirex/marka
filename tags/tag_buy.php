@@ -1,13 +1,163 @@
 <?php include '../common/configuration.php';?>
 <?php include '../view/header.php';
+      include '../model/beach_db.php';
 	
 	$user_fname = $_SESSION['firstname'];
 	$user_lname = $_SESSION['lastname'];
-
-	$_SESSION['beach_id'] = $_GET['beachid'];
-
+        
+        if($_SESSION['beach_id'] != NULL)
+        {
+            $_SESSION['beach_id'] = $_GET['beachid'];
+            $beach_id = $_SESSION['beach_id'];
+        }
+          
 	$user_id = $_SESSION['user_id'];
-	$beach_id = $_SESSION['beach_id'];
+	
+        $price = 0;
+        
+        $quick_id = filter_input(INPUT_GET, 'quick_id', FILTER_VALIDATE_INT);
+        
+        if($quick_id == 1)
+        {
+            $beachid = 'OCNJ FIX';
+            $price = 25;
+            
+            echo "<script type='text/javascript'>";
+            echo "$(document).ready"
+            . "("
+                . "function changeDrop()"
+                    . "{"
+                        . "document.getElementById('tags').value = 'seasonal';"
+                        . "document.getElementById('tag_price').value = '$25';"
+                    . "} "
+            . ")";
+            echo "</script>";
+        }
+        if($quick_id == 2)
+        {
+            $beachid = 'OCNJ FIX';
+            $price = 15;
+            
+            echo "<script type='text/javascript'>";
+            echo "$(document).ready"
+            . "("
+                . "function changeDrop()"
+                    . "{"
+                        . "document.getElementById('tags').value = 'weekly';"
+                        . "document.getElementById('tag_price').value = '$15';"
+                    . "} "
+            . ")";
+            echo "</script>";
+            
+        }
+        if($quick_id == 3)
+        {
+            $beachid = 11;
+            $price = 25;
+            
+            echo "<script type='text/javascript'>";
+            echo "$(document).ready"
+            . "("
+                . "function changeDrop()"
+                    . "{"
+                        . "document.getElementById('tags').value = 'seasonal';"
+                        . "document.getElementById('tag_price').value = '$25';"
+                    . "} "
+            . ")";
+            echo "</script>";
+            
+        }
+        if($quick_id == 4)
+        {
+            $beachid = 11;
+            $price = 15;
+            
+            echo "<script type='text/javascript'>";
+            echo "$(document).ready"
+            . "("
+                . "function changeDrop()"
+                    . "{"
+                        . "document.getElementById('tags').value = 'weekly';"
+                        . "document.getElementById('tag_price').value = '$15';"
+                    . "} "
+            . ")";
+            echo "</script>";
+            
+        }
+        if($quick_id == 5)
+        {
+            $beachid = 1;
+            $price = 25;
+            
+            echo "<script type='text/javascript'>";
+            echo "$(document).ready"
+            . "("
+                . "function changeDrop()"
+                    . "{"
+                        . "document.getElementById('tags').value = 'seasonal';"
+                        . "document.getElementById('tag_price').value = '$25';"
+                    . "} "
+            . ")";
+            echo "</script>";
+            
+        }
+        if($quick_id == 6)
+        {
+            $beachid = 1;
+            $price = 15;
+            
+            echo "<script type='text/javascript'>";
+            echo "$(document).ready"
+            . "("
+                . "function changeDrop()"
+                    . "{"
+                        . "document.getElementById('tags').value = 'weekly';"
+                        . "document.getElementById('tag_price').value = '$15';"
+                    . "} "
+            . ")";
+            echo "</script>";
+            
+        }
+        if($quick_id == 7)
+        {
+            $beachid = 6;
+            $price = 25;
+            
+            echo "<script type='text/javascript'>";
+            echo "$(document).ready"
+            . "("
+                . "function changeDrop()"
+                    . "{"
+                        . "document.getElementById('tags').value = 'seasonal';"
+                        . "document.getElementById('tag_price').value = '$25';"
+                    . "} "
+            . ")";
+            echo "</script>";
+            
+        }
+        if($quick_id == 8)
+        {
+            $beachid = 6;
+            $price = 15;            
+            
+            echo "<script type='text/javascript'>";
+            echo "$(document).ready"
+            . "("
+                . "function changeDrop()"
+                    . "{"
+                        . "document.getElementById('tags').value = 'weekly';"
+                        . "document.getElementById('tag_price').value = '$15';"
+                    . "} "
+            . ")";
+            echo "</script>";
+            
+        }
+        
+        //$beach_info = getBeachInfo($beachid);
+        
+        //echo $beach_info;
+        
+        //echo $quick_id;
 
 
 ?>
@@ -68,16 +218,36 @@
 							<td class="tag_buy_table"><label for="card_exp" class="label_t">Exp: </label></td>
 							<td class="tag_buy_table"><input type="text" name="card_exp" id="card_exp" size="15" value="" tabindex="6"/></td>
 						</tr>
-
-						<tr>
-							<td class="tag_buy_table"><label for="tag_qty" class="label_t">Qty Tags: </label></td>
-							<td class="tag_buy_table"><input type="text" name="tag_qty" id="tag_qty" size="10" value="" tabindex="7"/></td>
-						</tr>
-
 					</table>
 
 				<hr><br>
-			                        
+			              
+                                <h3>Tag Information</h3><hr>
+
+						<label for="tags" class="label_t">Type: </label>
+							<select name="tag_type" tabindex="3" id="tags" >
+								<option value="daily">Daily</option>
+								<option value="weekly">Weekly</option>
+								<option value="seasonal">Seasonal</option>
+							</select><br><br>
+			
+					<table cellpadding="10;">
+						<tr>
+							<td class="tag_buy_table"><label for="tag_price" class="label_t">Price Per Tag: </label></td>
+                                                        <td class="tag_buy_table"><input type="text" name="tag_price" id="tag_price" size="10" value="" tabindex="7" readonly=""/></td>
+						</tr>
+                                                <tr>
+							<td class="tag_buy_table"><label for="tag_qty2" class="label_t">Qty Tags: </label></td>
+							<td class="tag_buy_table"><input type="text" name="tag_qty2" id="tag_qty" size="10" value="" tabindex="7"/></td>
+						</tr>
+                                                <tr>
+                                                        <td class="tag_buy_table"><label for="sub" class="label_t"></label></td>
+							<td class="tag_buy_table"><button type="Submit" name="sub" tabindex="9">Calculate</button></td>
+                                                </tr>
+					</table>
+
+				<hr><br>
+                                
 			            <h3>Beach Information</h3><hr>
 
 				<h4 style="margin-top: 0;"><?php echo $beach_info['beach_name']; ?></h4>
