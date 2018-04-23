@@ -9,11 +9,7 @@
     <h1>ScanCode</h1><br>	 
             <div class="row">
                 <div class="center-div"> 
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="screen">
-                            <img src="https://www.howtogeek.com/wp-content/uploads/2017/02/04_scanning_qr_code.png.pagespeed.ce.JtkKULz4RH.png" alt="scan">
-                        </div>
-                    </div>	 
+                    <h1>Take out your QR Code scanner and scan the code, you will be directed towards the proper page after scanning.</h1>
                 </div>
             <br>	
         </div>		

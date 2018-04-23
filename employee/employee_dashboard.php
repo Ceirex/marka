@@ -13,7 +13,7 @@
                   <ul class="nav" style="padding:25px 0px 20px 0px;font-size: 1.1em;">
                    <br> <li class="nav-item"><a class="nav-link btn btn-primary btn-md" href="<?php echo $base_path . '/employee?scan' ?>" style="font-size: 1.2em">Scan Tag</a></li><br>
                     <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sign Out</a></li>
+                    <li class="nav-item"><a class="nav-link" href="employee_logout.php">Sign Out</a></li>
                   </ul>
                 </nav>
         </div> 
