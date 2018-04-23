@@ -29,7 +29,7 @@
       lati = 38.9351125;
       longt = -74.9060053;
         alert(lati);
-      };
+    };
 
     alert(choice);
   };

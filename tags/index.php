@@ -17,8 +17,8 @@
 	    $card_exp = htmlentities(filter_input(INPUT_POST,'card_exp'));
 	    $tag_qty = htmlentities(filter_input(INPUT_POST,'card_type'));
 
-	     $user_id = htmlentities(filter_input(INPUT_POST,'user_id'));
-	     $beach_id = htmlentities(filter_input(INPUT_POST,'beach_id'));
+	    $user_id = htmlentities(filter_input(INPUT_POST,'user_id'));
+	    $beach_id = htmlentities(filter_input(INPUT_POST,'beach_id'));
 	    
 	     $tag_insert = insertTag($uf_name, $ul_name, $card_type, $nameoncard, $card_num,  $card_exp, $tag_qty, $user_id, $beach_id);
 

@@ -1,20 +1,15 @@
 <?php include '../common/configuration.php';?>
 <?php include '../view/header.php';
-      include '../model/beach_db.php';
+   
 	
 	$user_fname = $_SESSION['firstname'];
 	$user_lname = $_SESSION['lastname'];
-        
-        if($_SESSION['beach_id'] != NULL)
-        {
-            $_SESSION['beach_id'] = $_GET['beachid'];
-            $beach_id = $_SESSION['beach_id'];
-        }
-          
+    
+
+
 	$user_id = $_SESSION['user_id'];
 	
         $price = 0;
-        
         $quick_id = filter_input(INPUT_GET, 'quick_id', FILTER_VALIDATE_INT);
         
         if($quick_id == 1)

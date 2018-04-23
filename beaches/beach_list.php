@@ -6,7 +6,6 @@ if (isset($_SESSION['user_id'])){
 	$user_id = 0;
 }
 
-$beaches = getBeaches();
 ?>
 
 	<div class="part5">

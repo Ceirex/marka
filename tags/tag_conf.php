@@ -1,8 +1,7 @@
 <?php include '../common/configuration.php';?>
 <?php include '../view/header.php';?>
-<?php include '../model/database.php'; ?>
-<?php include "../model/beach_db.php";?>
-<?php include "../model/tags_db.php";?>
+
+
 
 
 <br>

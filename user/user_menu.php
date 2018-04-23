@@ -1,6 +1,8 @@
 <?php include '../common/configuration.php';?>
 <?php include '../view/header.php';?>
 
+
+
 <div class="part3">
 	<div class="row">
 		<div class="container">		

@@ -6,6 +6,12 @@ include '../model/beach_db.php';
 
 	
 
-<?php include 'beach_list.php'; ?>
+<?php 
+
+$beaches = getBeaches();
+include 'beach_list.php'; 
+exit();
+
+?>
 
 

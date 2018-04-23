@@ -28,12 +28,15 @@ function tagPull($userid)
 {
     
     global $db;
-    $sql = "SELECT tags.tag_id, beaches.beach_name, tags.type FROM tags, beaches WHERE tags.beach_id = beaches.beach_id AND tags.user_id = :userid";
+    $sql = "SELECT `tags`.`tag_id`, `beaches`.`beach_name`, `tags`.`type` FROM `tags`, `beaches` WHERE `tags`.`beach_id` = `beaches`.`beach_id` AND `tags`.`user_id` = :userid";
     $statement = $db->prepare($sql);
-    $statement->bindValue(':userid',$user_id);
+    $statement->bindValue(':userid', $userid);
+    $statement->execute();
     $result = $statement->fetchAll();   
     $statement->closeCursor();
     
+
+
     return $result;
 }
 
