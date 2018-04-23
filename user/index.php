@@ -1,7 +1,8 @@
 <?php 
 	include '../common/configuration.php';	
 	include '../model/database.php';
-	include "../model/user_db.php";
+        include '../model/tags_db.php';
+        include "../model/user_db.php";
 ?>
 
 

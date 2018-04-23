@@ -24,5 +24,18 @@ function insertTag($uf_name, $ul_name, $card_type, $nameoncard, $card_num,  $car
     
 }
 
+function tagPull($userid)
+{
+    
+    global $db;
+    $sql = "SELECT tags.tag_id, beaches.beach_name, tags.type FROM tags, beaches WHERE tags.beach_id = beaches.beach_id AND tags.user_id = :userid";
+    $statement = $db->prepare($sql);
+    $statement->bindValue(':userid',$user_id);
+    $result = $statement->fetchAll();   
+    $statement->closeCursor();
+    
+    return $result;
+}
+
 
 ?>
