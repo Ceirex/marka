@@ -12,6 +12,17 @@ function getBeaches(){
     return $result;    
 }
 
+function getBeachName(){
+    global $db;
+    $sql = "SELECT beach_id, beach_name FROM beaches";
+    $statement = $db->prepare($sql);
+    $statement->execute();
+    $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $statement->closeCursor();
+    //result is the array of results
+    return $result;    
+}
+
 function getBeachInfo($beachid){
     global $db;
     $statement = $db->prepare('SELECT * FROM beaches where beach_id = :beachid');

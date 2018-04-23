@@ -1,65 +1,6 @@
 <?php include '../common/configuration.php';?>
 <?php include '../view/header.php';?>
 
-
-	
-<script>
-/*                "use strict";
-                
-		var validate = function(event){
-                    
-                    var theForm = document.getElementById('registered');
-  
-                    if (theForm.idfirstname.value === "")
-                            {
-                            alert("You must provide a first name.");
-                            event.preventDefault();
-                            }
-                    if (theForm.idlastname.value === "")
-                            {
-                            alert("You must provide a last name.");
-                            event.preventDefault();
-                            }
-                    if (theForm.idusername.value === "")
-                            {
-                            alert("You must provide a username.");
-                            event.preventDefault();
-                            }
-                    if (theForm.idpassword.value === "")
-                            {
-                            alert("You must provide a password.");
-                            event.preventDefault();
-                            }
-                    if (theForm.idpasswordconfirm.value === "")
-                            {
-                            alert("You must confirm your password.");
-                            event.preventDefault();
-                            }
-                    if (theForm.idemail.value === "")
-                            {
-                            alert("You must provide an email.");
-                            event.preventDefault();
-                            }
-                    if (theForm.idphonenumber.value === "")
-                            {
-                            alert("You must provide a phone number.");
-                            event.preventDefault();
-                            }
-                    if (theForm.idcreditcard.value === "")
-                            {
-                            alert("You must provide a credit card number.");
-                            event.preventDefault();
-                            }
-                        }
-		
-
-                //tell the browser what to do when the form gets submitted
-                window.onload = function () {
-                    document.getElementById('registered').onsubmit = function(event){validate(event);};
-                }*/
-</script>
-
-
 <div class="part7">
 
     <div class="container">
@@ -70,10 +11,10 @@
                 </center><hr style="width: 75%">
             </div>        
 
-        	<div id="content" style="padding: 40px;">
+        	<div id="content" style="padding: 0px  40px 40px 40px;">
                 <center>
                     <form id="register"  action="index.php" method="post">
-                        <div class="f_row">
+                        <div class="f_row" style="margin-left: 35px">
                             <input class="u_names" size="25" type="text" name="firstname" id="idfirstname" placeholder="First Name" tabindex="1" required="on"> 
                             <input class="u_names" size="25" type="text" name="lastname" id="idlastname" placeholder="Last Name" tabindex="2" required="on">              
                         </div> 

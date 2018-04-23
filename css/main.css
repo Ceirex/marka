@@ -275,18 +275,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', end
 		color: #05386B;
 	}
 
-.resheader>img{
-  float: left;
-  width: 100px;
-  height: 100px;
-  
-}
 
-.resheader>h1{
-  position: relative;
-  top: 18px;
-  left: 10px;	
-}
+	#beach_list{
+		width: 250px;
+		font-size: 1.2em;
+		height: 45px;
+		outline: none;
+		border-radius: 20px;
+		padding-left: 10px;
+		margin-right: 10px;
+		background-color: #e7e7e7;
+	}
+
+	.beachoption {
+		
+	}
+
+
+	.resheader>img{
+	  float: left;
+	  width: 100px;
+	  height: 100px;
+	  
+	}
+
+	.resheader>h1{
+	  position: relative;
+	  top: 18px;
+	  left: 10px;	
+	}
 
 
 
