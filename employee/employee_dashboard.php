@@ -1,5 +1,4 @@
-  
-<?php include '../view/header.php';?>
+  <?php include '../view/header.php';?>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
 
