@@ -6,8 +6,8 @@
 ?>
 
 
-<?php 
-	$user_id = $_GET['userid'];
+<?php         
+        $user_id = $_GET['userid'];
 	$beach_id = $_GET['beachid'];
 
 	if ( (isset($user_id)) && ($user_id > 0) && ($beach_id > 0) ) {

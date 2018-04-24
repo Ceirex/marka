@@ -13,7 +13,7 @@
     //echo '<br>';
 
     $userid = $_SESSION['user_id'];
-    $link = 'localhost/marka/employee/index.php?tag_id=' . $tag['tag_id'];
+    $link = $base_path . '/employee/index.php?tag_id=' . $tag['tag_id'];
     //print_r($tag);
 ?>
 

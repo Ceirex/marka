@@ -18,8 +18,8 @@
 			echo "<div class='row'>";
                     foreach($results as $result)
                     {
-                        
-                        $link = 'localhost/marka/employee/index.php?tag_id=' . $result['tag_id'];
+                        //echo $base_path;
+                        $link = $base_path . '/employee/index.php?tag_id=' . $result['tag_id'];
                         
                         //echo "<div class='row'>";
 			echo "<div class='col-sm-6 col-md-4 col-lg-3'>";

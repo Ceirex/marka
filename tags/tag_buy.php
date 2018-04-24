@@ -14,7 +14,7 @@
         
         if($quick_id == 1)
         {
-            $beachid = 'OCNJ FIX';
+            $beachid = 5;
             $price = 25;
             
             echo "<script type='text/javascript'>";
@@ -30,7 +30,7 @@
         }
         if($quick_id == 2)
         {
-            $beachid = 'OCNJ FIX';
+            $beachid = 5;
             $price = 15;
             
             echo "<script type='text/javascript'>";
@@ -227,18 +227,10 @@
 							</select><br><br>
 			
 					<table cellpadding="10;">
-						<tr>
-							<td class="tag_buy_table"><label for="tag_price" class="label_t">Price Per Tag: </label></td>
-                                                        <td class="tag_buy_table"><input type="text" name="tag_price" id="tag_price" size="10" value="" tabindex="7" readonly=""/></td>
-						</tr>
                                                 <tr>
 							<td class="tag_buy_table"><label for="tag_qty2" class="label_t">Qty Tags: </label></td>
 							<td class="tag_buy_table"><input type="text" name="tag_qty2" id="tag_qty" size="10" value="" tabindex="7"/></td>
 						</tr>
-                                                <tr>
-                                                        <td class="tag_buy_table"><label for="sub" class="label_t"></label></td>
-							<td class="tag_buy_table"><button type="Submit" name="sub" tabindex="9">Calculate</button></td>
-                                                </tr>
 					</table>
 
 				<hr><br>

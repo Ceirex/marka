@@ -22,9 +22,9 @@
 					<div class="container"> 
 					  <div class="col-sm-6 col-md-4 col-lg-3">
 					    <div class="thumbnail">
-                            <img src="https://www.islandbeachgear.com/media/catalog/product/cache/4/image/1800x/67d3d6eebbfc185512fa288904df8730/T/9/T9GdhDQXK1lFCWTrKV1WLfyuv60cDAbP-25_1.jpg" alt="ocnj_seasonal">
+                            <img src="https://www.viplypass.com/wp-content/uploads/2017/05/ocean-grove-badge.png" alt="OG_seasonal">
 					      <div class="caption">
-					        <h3>OCNJ Seasonal</h3>
+					        <h3>OG Seasonal</h3>
 					        <p class="thumbnail_p">$25</p>
                                                 <p><a href="../tags/tag_buy.php?quick_id=1" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
 					      </div>
@@ -33,9 +33,9 @@
 
 					  <div class="col-sm-6 col-md-4 col-lg-3">
 					    <div class="thumbnail">
-                           	<img src="https://i.ebayimg.com/images/i/192416379409-0-1/s-l1000.jpg" alt="ocnj_Weekly">
+                           	<img src="https://img.etsystatic.com/il/3f9c94/1178820126/il_570xN.1178820126_kkzs.jpg?version=0" alt="OG_Weekly">
 					      <div class="caption">
-					        <h3>OCNJ Weekly</h3>
+					        <h3>OG Weekly</h3>
 					        <p class="thumbnail_p">$15</p>
 					        <p><a href="../tags/tag_buy.php?quick_id=2" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">View</a></p>
 					      </div>
