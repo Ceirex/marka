@@ -22,7 +22,6 @@ function insertTag($uf_name, $ul_name, $card_type, $nameoncard, $card_num,  $car
     
     return $result;
     //result is true on success, false on error
-    
 }
 
 function tagPull($userid)
