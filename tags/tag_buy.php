@@ -154,8 +154,24 @@
         
         //echo $quick_id;
 
-
 ?>
+
+<script type="text/javascript">
+
+/*jsoncall for cardtype*/
+    $(document).ready(function() {
+        
+        //here's where we populate the select tag with options
+            $.getJSON('../services?cardtype',function(data){
+            for(var i=0;i<data.length;i++) {
+                var my_new_option = '<option' + ' value= "' + data[i]['name']  + '">' + data[i]['name']  + '</option>';
+                $("#cardtype").append(my_new_option);
+            }
+        });
+
+    });
+
+</script>
  
  <div class="part7">
 <div class="container">
@@ -192,10 +208,8 @@
 			            <h3>Card Information</h3><hr>
 
 						<label for="cards" class="label_t">Type: </label>
-							<select name="card_type" tabindex="3" id="cards" >
-								<option value="Visa">Visa</option>
-								<option value="MasterCard">MasterCard</option>
-								<option value="Discover">Discover</option>
+							<select id="cardtype" name="card_type" tabindex="3" id="cards" >
+								<option>Select a card type</option>
 							</select><br><br>
 			
 					<table cellpadding="10;">

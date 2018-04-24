@@ -2,7 +2,6 @@
 include '../common/configuration.php';
 include '../model/database.php';
 include '../common/functions.php';
-
 include '../model/beach_db.php';
 
 
@@ -12,6 +11,10 @@ if (isset($_GET['beachmapinfo'])){
     exit();
 }
 
+if (isset($_GET['cardtype'])){
+    include 'card_types.php';
+    exit();
+}
 
 
 

@@ -11,6 +11,7 @@
                 $("#beach_list").append(my_new_option);
             }
         });
+
     });
 
     /*change map long and lat depending on beach selected*/ 
