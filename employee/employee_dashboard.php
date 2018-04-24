@@ -56,121 +56,121 @@
                   <th>Name</th>
                   <th>Type</th>
                   <th>Location</th>
-                  <th>Date/Time</th>
+                  <th>Date</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
+                  <td>Cape May</td>
+                  <td>Seasonal</td>
+                  <td>New Jersey</td>
+                  <td>05/03/2010</td>
                 </tr>
                 <tr>
                   <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
+                  <td>Asbury Park</td>
+                  <td>Weekly</td>
+                  <td>New Jersey</td>
+                  <td>03/24/2018</td>
                 </tr>
                 <tr>
                   <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
+                  <td>Long Beach Island</td>
+                  <td>Weekly</td>
+                  <td>New Jersey</td>
+                  <td>07/22/2018</td>
                 </tr>
                 <tr>
                   <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
+                  <td>Spring Lake</td>
+                  <td>Weekly</td>
+                  <td>New Jersey</td>
+                  <td>05/11/2013</td>
                 </tr>
                 <tr>
                   <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
+                  <td>Ocean Grove</td>
+                  <td>Seasonal</td>
+                  <td>New Jersey</td>
+                  <td>05/11/2013</td>
                 </tr>
                 <tr>
                   <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
+                  <td>Spring Lake</td>
+                  <td>Seasonal</td>
+                  <td>New Jersey</td>
+                  <td>03/18/2017</td>
                 </tr>
                 <tr>
                   <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
+                  <td>Avalon</td>
+                  <td>Seasonal</td>
+                  <td>New Jersey</td>
+                  <td>05/17/2014</td>
                 </tr>
                 <tr>
                   <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
+                  <td>Margate </td>
+                  <td>Weekly</td>
+                  <td>New Jersey</td>
+                  <td>05/11/2013</td>
                 </tr>
                 <tr>
                   <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
+                  <td>Margate</td>
+                  <td>Seasonal</td>
+                  <td>New Jersey</td>
+                  <td>05/09/2019</td>
                 </tr>
                 <tr>
                   <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
+                  <td>Sandy Hook</td>
+                  <td>Weekly</td>
+                  <td>New Jersey</td>
+                  <td>05/11/2013</td>
                 </tr>
                 <tr>
                   <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
+                  <td>Stone Harbor</td>
+                  <td>Seasonal</td>
+                  <td>New Jersey</td>
+                  <td>06/19/2017</td>
                 </tr>
                 <tr>
                   <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
+                  <td>Sandy hook</td>
+                  <td>Weekly</td>
+                  <td>New Jersey</td>
+                  <td>05/19/2018</td>
                 </tr>
                 <tr>
                   <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
+                  <td>Point Pleasant</td>
+                  <td>Seasonal</td>
+                  <td>New Jersey</td>
+                  <td>05/11/2013</td>
                 </tr>
                 <tr>
                   <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
+                  <td>Wildwood</td>
+                  <td>Seasonal</td>
+                  <td>New Jersey</td>
+                  <td>06/24/2019</td>
                 </tr>
                 <tr>
                   <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
+                  <td>Cape May</td>
+                  <td>Seasonal</td>
+                  <td>New Jersey</td>
+                  <td>06/22/2017</td>
                 </tr>
                 <tr>
                   <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
+                  <td>Avalon </td>
+                  <td>Seasonal</td>
+                  <td>New Jersey</td>
+                  <td>05/15/2017</td>
                 </tr>
               </tbody>
             </table>
