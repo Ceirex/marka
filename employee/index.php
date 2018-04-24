@@ -19,6 +19,8 @@
     }
     if (isset ($tag_id))
     {
+        $tag = tagRecord($tag_id);
+        
         include 'employee_record.php';
         exit();
     }

@@ -6,23 +6,17 @@
 
 <br>
 
+<div class="container">
+	
+
 <input type="hidden" value="<?php echo $tag_insert?>" id="tag_insert">
-       <hr><br>
-       <h3>Thank you for your purchase.  Scan the QR Code below to access your beach.<h3>
-    <h3>Your beach number is: <?php echo $tag_insert?><h3>
+<hr><br>
+<h3>Thank you for your purchase.  Scan the QR Code below to access your beach.</h3>
+<h3>Your beach number is: <?php echo $tag_insert?></h3>
                                         
-                                        <img id="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Offline">
+<a href="<?php echo $base_path . '/user/user_menu.php' ?>"><button type="button" class="btn btn-info btn-md" style="margin-top: 20px;">User Menu</button></a>
 
-
-				<br><hr>
-                                
-<script>
-    $(document).ready(function(){
-        //when doc is ready
-        var tag_insert = $('#tag_insert').val();
-        var url = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+ tag_insert;
-        $('#qrcode').attr('src',url);
-</script>
-
+<br><hr>
+</div>
 
 <?php include '../view/footer.php';?>

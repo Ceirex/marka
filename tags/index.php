@@ -6,22 +6,8 @@
 ?>
 
 
-<?php 
-	$user_id = $_GET['userid'];
-	$beach_id = $_GET['beachid'];
+<?php         
 
-	if ( (isset($user_id)) && ($user_id > 0) && ($beach_id > 0) ) {
-		$beach_chosen = $_GET['beachid'];
-		$beach_info = getBeachInfo($beach_chosen);
-
-		include 'tag_buy.php';
-		exit();
-	}
-
-	if ($user_id == 1) {
-		include '../user/index.php';
-		exit();
-	}
 
 	if (isset($_POST['submit'])){
 	    $uf_name = htmlentities(filter_input(INPUT_POST,'f_name'));
@@ -43,12 +29,17 @@
 	    exit();
 	} 
 
+    $user_id = $_GET['userid'];
+	$beach_id = $_GET['beachid'];
 
+	if ( (isset($user_id)) && ($user_id > 0) && ($beach_id > 0) ) {
+		$beach_chosen = $_GET['beachid'];
+		$beach_info = getBeachInfo($beach_chosen);
 
-
-
-
-
+		include 'tag_buy.php';
+		exit();
+	}
+	
 	include '../user/index.php';
 	exit();
 ?>

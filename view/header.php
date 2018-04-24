@@ -77,7 +77,7 @@ header('Content-Type: text/html; charset=ISO-8859-1');
 		      <ul class="nav navbar-nav navbar-right">
                 
                         <li>
-                            <a href="<?php echo $base_path . '/employee/index.php'; ?>">Employee [TEST]</a>
+                            <a href="<?php echo $base_path . '/employee/index.php'; ?>">Employee</a>
                         </li>
                 	
 		        <?php 
